@@ -1,18 +1,10 @@
-@import url("https://rsms.me/inter/inter.css");
-html {
-  font-family: "Inter", sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
 body {
   background-color: #ffffff;
   color: #00194c;
   font-family: "Inter", sans-serif;
   font-style: normal;
 }
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -50,3 +42,4 @@ ul {
   flex-direction: column;
   overflow: hidden;
 }
+/*# sourceMappingURL=style.css.map */

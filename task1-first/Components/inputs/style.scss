@@ -1,0 +1,163 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+$color_1: #00194c;
+$color_2: #ff3434;
+$color_3: #ffcb2f;
+$color_4: #00194c;
+$color_5: #bdbdbd;
+$color_6: #53d86a;
+$font-family_1: "Inter", sans-serif;
+$font-family_2: "SF Pro Text", sans-serif;
+$background-color_1: #e5e5e5;
+$background-color_2: #f2f2f2;
+$border-color_1: #bdbdbd;
+$border-color_2: #0052ff;
+$border-color_3: #53d86a;
+$border-color_4: #ff3434;
+$border-color_5: #ffcb2f;
+
+body {
+	background-color: $background-color_1;
+	color: $color_1;
+}
+table {
+	position: relative;
+	width: 864px;
+	height: 1019px;
+	background: #ffffff;
+	font-family: $font-family_2;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+th {
+	background: #e6eeff;
+}
+td {
+	border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+	text-align: center;
+}
+tr {
+	font-family: $font-family_1;
+	font-style: normal;
+	font-weight: 400;
+}
+input {
+	text-indent: 16px;
+}
+label {
+	display: inline-block;
+	text-align: left;
+	font-family: $font-family_1;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	margin-right: 210px;
+}
+.red {
+	color: $color_2;
+}
+.yellow {
+	color: $color_3;
+}
+input[type="text"] {
+	height: 50px;
+	width: 320px;
+	border: 1px solid;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border-color: $border-color_1;
+	color: $color_4;
+}
+.type1 {
+	input[type="text"] {
+		border-color: $border-color_1;
+		height: 50px;
+		width: 320px;
+		font-family: $font-family_1;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	&:focus {
+		outline: none;
+		border-color: $border-color_2;
+	}
+	&:hover {
+		border-color: $border-color_2;
+	}
+	&:disabled {
+		background-color: $background-color_2;
+		border: none;
+		cursor: not-allowed;
+	}
+}
+.type1::placeholder {
+	color: $color_5;
+}
+.error {
+	&::placeholder {
+		color: $color_2;
+	}
+}
+.success {
+	&::placeholder {
+		color: $color_6;
+	}
+}
+.alert {
+	&::placeholder {
+		color: $color_3;
+	}
+}
+.type1.success {
+	border-color: $border-color_3;
+}
+.type1.error {
+	border-color: $border-color_4;
+}
+.type1.alert {
+	border-color: $border-color_5;
+}
+.icon {
+	padding-left: 37px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23BDBDBD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-user'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-size: 16px 18px;
+	background-position: left 22px bottom 16px;
+}
+.icon-right {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23BDBDBD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-eye-off'%3E%3Cpath d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'%3E%3C/path%3E%3Cline x1='1' y1='1' x2='23' y2='23'%3E%3C/line%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-size: 22px;
+	background-position: 279px 14px;
+}
+.error-l {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF3434' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-user'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+}
+.success-l {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2353D86A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-user'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+}
+.alert-l {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFCB2F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-user'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+}
+.alert-r {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFCB2F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-eye-off'%3E%3Cpath d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'%3E%3C/path%3E%3Cline x1='1' y1='1' x2='23' y2='23'%3E%3C/line%3E%3C/svg%3E");
+}
+.error-r {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF3434' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-eye-off'%3E%3Cpath d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'%3E%3C/path%3E%3Cline x1='1' y1='1' x2='23' y2='23'%3E%3C/line%3E%3C/svg%3E");
+}
+.success-r {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2353D86A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-eye-off'%3E%3Cpath d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'%3E%3C/path%3E%3Cline x1='1' y1='1' x2='23' y2='23'%3E%3C/line%3E%3C/svg%3E");
+}

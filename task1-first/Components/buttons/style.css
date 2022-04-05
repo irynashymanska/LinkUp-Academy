@@ -2,6 +2,7 @@
 html {
   font-family: "Inter", sans-serif;
 }
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
@@ -19,7 +20,6 @@ html {
   --color-disabled2: #b3cbff;
   --background2: #e6eeff;
   --shadow: rgba(25, 1, 52, 0.12);
-
   --color-h: 221;
   --color-s: 100%;
   --color-l: 50%;
@@ -42,16 +42,20 @@ table {
   line-height: 24px;
   text-align: center;
 }
+
 th {
   background: var(--background2);
 }
+
 td {
   border-bottom: 1px solid rgba(0, 82, 255, 0.16);
   text-align: center;
 }
+
 tr {
   font-weight: 400;
 }
+
 button {
   font-weight: 400;
   border-radius: 4px;
@@ -72,6 +76,7 @@ button {
 .button1 {
   background: var(--background1);
 }
+
 .button1:hover {
   background: var(--background1-action);
   box-shadow: 0px 2px 10px var(--shadow);
@@ -86,6 +91,15 @@ button {
   background: var(--background-disabled1);
   color: var(--color-disabled1);
   cursor: not-allowed;
+}
+
+.button2 {
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid var(--background1);
+  box-sizing: border-box;
+  color: var(--background1);
+  background: var(--white);
 }
 
 .button2:hover {
@@ -107,15 +121,6 @@ button {
   cursor: not-allowed;
 }
 
-.button2 {
-  border-radius: 4px;
-  text-align: center;
-  border: 1px solid var(--background1);
-  box-sizing: border-box;
-  color: var(--background1);
-  background: var(--white);
-}
-
 img {
   vertical-align: middle;
   width: 24px;
@@ -125,6 +130,7 @@ img {
 span {
   vertical-align: middle;
 }
+
 .position {
   display: inline-block;
   margin: 10px;
@@ -141,3 +147,4 @@ span {
 .container-l {
   margin-right: 10px;
 }
+/*# sourceMappingURL=style.css.map */

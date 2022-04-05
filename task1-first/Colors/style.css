@@ -1,20 +1,7 @@
-:root {
-  --primary: #0052ff;
-  --primary-rgb: 0, 82, 255;
-
-  --color-h: 221;
-  --color-s: 100%;
-  --color-l: 50%;
-
-  --secondary: #fe9526;
-  --info: #ffcb2f;
-  --success: #53d86a;
-  --error: #ff3434;
-  --background: #ffffff;
-}
 body {
-  background-color: var(--background);
+  background-color: #ffffff;
 }
+
 .square {
   height: 48px;
   width: 48px;
@@ -22,6 +9,7 @@ body {
   margin-left: 200px;
   border-radius: 3px;
 }
+
 .square1 {
   height: 130px;
   width: 130px;
@@ -30,105 +18,85 @@ body {
 }
 
 #red {
-  background-color: var(--error);
+  background-color: #ff3434;
   margin-left: 200px;
 }
 
 #orange {
-  background-color: var(--secondary);
+  background-color: #fe9526;
 }
 
 #yellow {
-  background-color: var(--info);
+  background-color: #ffcb2f;
   margin-left: 200px;
 }
 
 #green {
-  background-color: var(--success);
+  background-color: #53d86a;
   margin-left: 200px;
 }
+
 #blue {
-  background-color: rgba(var(--primary-rgb));
+  background-color: #0052ff;
 }
 
 #a1 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 1.85)
-  );
+  background-color: hsl(221, 100%, calc(50% * 1.85));
 }
+
 #a2 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 1.65)
-  );
+  background-color: hsl(221, 100%, calc(50% * 1.65));
 }
+
 #a3 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 1.45)
-  );
+  background-color: hsl(221, 100%, calc(50% * 1.45));
 }
+
 #a4 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 1.25)
-  );
+  background-color: hsl(221, 100%, calc(50% * 1.25));
 }
+
 #a5 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 1)
-  );
+  background-color: hsl(221, 100%, calc(50% * 1));
 }
+
 #a6 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 0.9)
-  );
+  background-color: hsl(221, 100%, calc(50% * 0.9));
 }
+
 #a7 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 0.75)
-  );
+  background-color: hsl(221, 100%, calc(50% * 0.75));
 }
+
 #a8 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 0.55)
-  );
+  background-color: hsl(221, 100%, calc(50% * 0.55));
 }
+
 #a9 {
-  background-color: hsl(
-    var(--color-h),
-    var(--color-s),
-    calc(var(--color-l) * 0.35)
-  );
+  background-color: hsl(221, 100%, calc(50% * 0.35));
 }
+
 #b1 {
-  background-color: rgba(var(--primary-rgb), 0.08);
+  background-color: rgba(0, 82, 255, 0.08);
 }
+
 #b2 {
-  background-color: rgba(var(--primary-rgb), 0.16);
+  background-color: rgba(0, 82, 255, 0.16);
 }
+
 #b3 {
-  background-color: rgba(var(--primary-rgb), 0.24);
+  background-color: rgba(0, 82, 255, 0.24);
 }
+
 #b4 {
-  background-color: rgba(var(--primary-rgb), 0.32);
+  background-color: rgba(0, 82, 255, 0.32);
 }
+
 #b5 {
-  background-color: rgba(var(--primary-rgb), 0.4);
+  background-color: rgba(0, 82, 255, 0.4);
 }
+
 #b6 {
-  background-color: rgba(var(--primary-rgb), 0.48);
+  background-color: rgba(0, 82, 255, 0.48);
 }
+/*# sourceMappingURL=style.css.map */
