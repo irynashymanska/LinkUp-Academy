@@ -1,0 +1,134 @@
+:root {
+  --primary: #0052ff;
+  --primary-rgb: 0, 82, 255;
+
+  --color-h: 221;
+  --color-s: 100%;
+  --color-l: 50%;
+
+  --secondary: #fe9526;
+  --info: #ffcb2f;
+  --success: #53d86a;
+  --error: #ff3434;
+  --background: #ffffff;
+}
+body {
+  background-color: var(--background);
+}
+.square {
+  height: 48px;
+  width: 48px;
+  margin: 5px;
+  margin-left: 200px;
+  border-radius: 3px;
+}
+.square1 {
+  height: 130px;
+  width: 130px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+#red {
+  background-color: var(--error);
+  margin-left: 200px;
+}
+
+#orange {
+  background-color: var(--secondary);
+}
+
+#yellow {
+  background-color: var(--info);
+  margin-left: 200px;
+}
+
+#green {
+  background-color: var(--success);
+  margin-left: 200px;
+}
+#blue {
+  background-color: rgba(var(--primary-rgb));
+}
+
+#a1 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 1.85)
+  );
+}
+#a2 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 1.65)
+  );
+}
+#a3 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 1.45)
+  );
+}
+#a4 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 1.25)
+  );
+}
+#a5 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 1)
+  );
+}
+#a6 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 0.9)
+  );
+}
+#a7 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 0.75)
+  );
+}
+#a8 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 0.55)
+  );
+}
+#a9 {
+  background-color: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) * 0.35)
+  );
+}
+#b1 {
+  background-color: rgba(var(--primary-rgb), 0.08);
+}
+#b2 {
+  background-color: rgba(var(--primary-rgb), 0.16);
+}
+#b3 {
+  background-color: rgba(var(--primary-rgb), 0.24);
+}
+#b4 {
+  background-color: rgba(var(--primary-rgb), 0.32);
+}
+#b5 {
+  background-color: rgba(var(--primary-rgb), 0.4);
+}
+#b6 {
+  background-color: rgba(var(--primary-rgb), 0.48);
+}
