@@ -46,6 +46,13 @@ tr {
 
 input {
   text-indent: 16px;
+  height: 50px;
+  width: 320px;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: var(--normal);
+  color: var(--pressed);
 }
 
 label {
@@ -57,6 +64,7 @@ label {
   font-size: 14px;
   line-height: 22px;
   margin-right: 210px;
+  margin-top: 8px;
 }
 .red {
   color: var(--error);
@@ -65,17 +73,7 @@ label {
   color: var(--info);
 }
 
-input[type="text"] {
-  height: 50px;
-  width: 320px;
-  border: 1px solid;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border-color: var(--normal);
-  color: var(--pressed);
-}
-
-.type1 input[type="text"] {
+.type1 {
   border-color: var(--normal);
   height: 50px;
   width: 320px;
