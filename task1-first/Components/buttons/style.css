@@ -2,6 +2,7 @@
 html {
   font-family: "Inter", sans-serif;
 }
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
@@ -19,7 +20,6 @@ html {
   --color-disabled2: #b3cbff;
   --background2: #e6eeff;
   --shadow: rgba(1, 21, 52, 0.16);
-
   --color-h: 221;
   --color-s: 100%;
   --color-l: 50%;
@@ -42,16 +42,20 @@ table {
   line-height: 24px;
   text-align: center;
 }
+
 th {
   background: var(--background2);
 }
+
 td {
   border-bottom: 1px solid rgba(0, 82, 255, 0.16);
   text-align: center;
 }
+
 tr {
   font-weight: 400;
 }
+
 button {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -73,10 +77,23 @@ button {
   height: 48px;
 }
 
+.button-img:hover {
+  border: none;
+}
+
+.button-img:focus {
+  border: none;
+}
+
 .primary {
   background: var(--background1);
 }
-.primary:hover,
+
+.primary:hover {
+  background: var(--background1-action);
+  box-shadow: 0px 4px 10px var(--shadow);
+}
+
 .primary:focus {
   background: var(--background1-action);
   box-shadow: 0px 4px 10px var(--shadow);
@@ -85,25 +102,6 @@ button {
 .primary:disabled {
   background: var(--background-disabled1);
   color: var(--color-disabled1);
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-.ghost:hover,
-.ghost:focus {
-  background: var(--background2);
-  box-shadow: 0px 4px 10px var(--shadow);
-  border: 1px solid var(--background1);
-}
-
-.button-img:hover, .button-img:focus {
-  border:none;
-}
-
-.ghost:disabled {
-  background: var(--white);
-  color: var(--color-disabled2);
-  border: 1px solid var(--color-disabled2);
   cursor: not-allowed;
   box-shadow: none;
 }
@@ -117,6 +115,24 @@ button {
   background: var(--white);
 }
 
+.ghost:hover {
+  background: var(--background2);
+  box-shadow: 0px 4px 10px var(--shadow);
+}
+
+.ghost:focus {
+  background: var(--background2);
+  box-shadow: 0px 4px 10px var(--shadow);
+}
+
+.ghost:disabled {
+  background: var(--white);
+  color: var(--color-disabled2);
+  border: 1px solid var(--color-disabled2);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
 img {
   vertical-align: middle;
   width: 24px;
@@ -126,6 +142,7 @@ img {
 span {
   vertical-align: middle;
 }
+
 .position {
   display: inline-block;
   margin: 10px;
@@ -142,3 +159,4 @@ span {
 .container-l {
   margin-right: 10px;
 }
+/*# sourceMappingURL=style.css.map */

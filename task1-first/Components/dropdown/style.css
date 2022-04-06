@@ -2,21 +2,15 @@
 html {
   font-family: "Inter", sans-serif;
 }
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
   }
 }
-:root {
-  --white: #ffffff;
-  --main: #0052ff;
-  --hover: #e6eeff;
-  --bckgrnd: #e5e5e5;
-  --list-text: #00194c;
-}
 
 body {
-  background-color: var(--bckgrnd);
+  background-color: #e5e5e5;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -27,16 +21,17 @@ body {
 .out {
   height: 54px;
   width: 325px;
-  background-color: var(--white);
+  background-color: #ffffff;
   margin: 5px;
   margin-left: 200px;
-  border: 1px solid var(--main);
+  border: 1px solid #0052ff;
   box-sizing: border-box;
   border-radius: 4px;
   display: flex;
   align-items: center;
-  color: var(--main);
+  color: #0052ff;
 }
+
 .in {
   margin-left: 24px;
   padding: 13px;
@@ -44,6 +39,7 @@ body {
   width: 285px;
   cursor: pointer;
 }
+
 img {
   width: 20px;
   height: 20px;
@@ -56,15 +52,17 @@ img {
   width: 325px;
   display: flex;
   align-items: center;
-  color: var(--list-text);
-  background: var(--white);
-  border-bottom: 1px solid var(--hover);
+  color: #00194c;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
   margin-left: 200px;
   cursor: pointer;
 }
+
 .list:hover {
-  background-color: var(--hover);
+  background-color: #e6eeff;
 }
+
 p {
   margin-left: 24px;
   padding: 16px;
@@ -73,9 +71,11 @@ p {
 .shadow1 {
   border-radius: 4px 4px 0px 0px;
 }
+
 .shadow2 {
   border-radius: 0px;
 }
+
 .shadow3 {
   border-radius: 0px 0px 4px 4px;
 }
@@ -83,3 +83,4 @@ p {
 span {
   align-self: centre;
 }
+/*# sourceMappingURL=style.css.map */

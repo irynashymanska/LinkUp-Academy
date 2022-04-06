@@ -1,111 +1,107 @@
 @import url("https://rsms.me/inter/inter.css");
-@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
-@import url("http://fonts.cdnfonts.com/css/sf-pro-text");
 html {
   font-family: "Inter", sans-serif;
 }
-
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
   }
 }
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("http://fonts.cdnfonts.com/css/sf-pro-text");
+
+$color_1: #00194c;
+$font-family_1: "Inter", sans-serif;
+$font-family_2: "SF Pro Text", sans-serif;
+$font-family_3: "SF Pro Display", sans-serif;
+$background-color_1: #e5e5e5;
 
 body {
-  background-color: #e5e5e5;
-  color: #00194c;
+  background-color: $background-color_1;
+  color: $color_1;
   font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Inter", sans-serif;
+  font-family: $font-family_1;
 }
-
 table {
   position: relative;
   width: 1300px;
   height: 1425px;
   background: #ffffff;
-  font-family: "SF Pro Text", sans-serif;
+  font-family: $font-family_2;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
 }
-
 th {
   background: #e6eeff;
 }
-
 td {
   border: 1px solid rgba(0, 82, 255, 0.16);
 }
-
 h1, .h1 {
   font-size: 32px;
   line-height: 42px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: $font-family_1;
 }
 
 h2, .h2 {
   font-size: 28px;
   line-height: 36px;
   font-weight: 600;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: $font-family_3;
 }
 
 h3, .h3 {
   font-size: 22px;
   line-height: 30px;
   font-weight: 600;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: $font-family_3;
 }
 
 h4, .h4 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: $font-family_3;
 }
 
-h5, .h5 {
+h5,.h5 {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
-  font-family: "SF Pro Text", sans-serif;
+  font-family: $font-family_2;
 }
 
 h6, .h6 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  font-family: "SF Pro Text", sans-serif;
+  font-family: $font-family_2;
 }
 
 p {
   font-weight: 400;
-  font-family: "Inter", sans-serif;
+  font-family: $font-family_1;
   font-size: 20px;
   line-height: 28px;
 }
-
 .p1 {
   font-size: 20px;
   line-height: 28px;
 }
-
 .p2 {
   font-size: 18px;
   line-height: 26px;
 }
-
 .p3 {
   font-size: 16px;
   line-height: 24px;
 }
-
 .p4 {
   font-size: 14px;
   line-height: 22px;
 }
-/*# sourceMappingURL=style.css.map */
