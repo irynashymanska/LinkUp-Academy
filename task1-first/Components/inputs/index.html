@@ -102,14 +102,10 @@
             name="fname"
             class="type1 icon"
             placeholder="Normal"
-            onfocus="this.placeholder = 'Focus'"
-            ;
-            onblur="this.placeholder = 'Normal'"
-            ;
-            onmouseover="this.placeholder = 'Hover'"
-            ;
-            onmouseout="this.placeholder = 'Normal'"
-            ;
+            onfocus="this.placeholder = 'Focus'";
+            onblur="this.placeholder = 'Normal'";
+            onmouseover="this.placeholder = 'Hover'";
+            onmouseout="this.placeholder = 'Normal'";
             oninput="myFunction_left(this)"
           />
         </td>
@@ -231,7 +227,7 @@
             class="type1 alert icon-right alert-r"
             placeholder="Alert"
           />
-          <br />
+          <br>
           <label class="yellow">With explanation</label>
         </td>
       </tr>
@@ -252,10 +248,14 @@
 
     <script>
       function myFunction(x) {
-        x.style.backgroundImage = "url(eye.svg)";
+        if (x.value == '') {  x.style.backgroundImage = "url(eye-off.svg)" } 
+        else { x.style.backgroundImage = "url(eye.svg)";}
+        
       }
       function myFunction_left(x) {
-        x.style.backgroundImage = "url(user.svg)";
+        if (x.value == '') {  x.style.backgroundImage = "url(user-grey.svg)" } 
+        else {
+        x.style.backgroundImage = "url(user.svg)";}
       }
     </script>
   </body>
