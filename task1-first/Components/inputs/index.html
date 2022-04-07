@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inputs</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Style name</th>
+        <th>State</th>
+        <th>Sample</th>
+      </tr>
+
+      <tr>
+        <td>Text Inputs</td>
+        <td>Normal-Pressed</td>
+        <td>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            class="type1"
+            placeholder="Normal"
+            onfocus="this.placeholder = 'Focus'"
+            onblur="this.placeholder = 'Normal'"
+            onmouseover="this.placeholder = 'Hover'"
+            onmouseout="this.placeholder = 'Normal'"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs</td>
+        <td>Error</td>
+        <td>
+          <input
+            type="text"
+            id="error"
+            class="type1 error"
+            placeholder="Error"
+          />
+          <label class="red">With explanation</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs</td>
+        <td>Success</td>
+        <td>
+          <input
+            type="text"
+            id="success"
+            class="type1 success"
+            placeholder="Success"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs</td>
+        <td>Info</td>
+        <td>
+          <input
+            type="text"
+            id="alert"
+            class="type1 alert"
+            placeholder="Alert"
+          />
+          <label class="yellow">With explanation</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs</td>
+        <td>Disabled</td>
+        <td>
+          <input type="text" class="type1" placeholder="Disable" disabled />
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    <table>
+      <tr>
+        <th>Style name</th>
+        <th>State</th>
+        <th>Sample</th>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Left Icon</td>
+        <td>Normal-Pressed</td>
+        <td>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            class="type1 icon"
+            placeholder="Normal"
+            onfocus="this.placeholder = 'Focus'"
+            onblur="this.placeholder = 'Normal'"
+            onmouseover="this.placeholder = 'Hover'"
+            onmouseout="this.placeholder = 'Normal'"
+            oninput="myFunction_left(this)"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Text Inputs Left Icon</td>
+        <td>Error</td>
+        <td>
+          <input
+            type="text"
+            class="type1 error icon error-l"
+            placeholder="Error"
+          />
+          <label class="red">With explanation</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Left Icon</td>
+        <td>Success</td>
+        <td>
+          <input
+            type="text"
+            class="type1 success icon success-l"
+            placeholder="Success"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Left Icon</td>
+        <td>Info</td>
+        <td>
+          <input
+            type="text"
+            class="type1 alert icon alert-l"
+            placeholder="Alert"
+          />
+          <label class="yellow">With explanation</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Left Icon</td>
+        <td>Disabled</td>
+        <td>
+          <input
+            type="text"
+            class="type1 icon"
+            placeholder="Disable"
+            disabled
+          />
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <table>
+      <tr>
+        <th>Style name</th>
+        <th>State</th>
+        <th>Sample</th>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Right Icon</td>
+        <td>Normal-Pressed</td>
+        <td>
+          <input
+            type="text"
+            id="t2"
+            name="fname"
+            class="type1 icon-right"
+            placeholder="Normal"
+            onfocus="this.placeholder = 'Focus'"
+            onblur="this.placeholder = 'Normal'"
+            onmouseover="this.placeholder = 'Hover'"
+            onmouseout="this.placeholder = 'Normal'"
+            oninput="myFunction(this)"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Right Icon</td>
+        <td>Error</td>
+        <td>
+          <input
+            type="text"
+            class="type1 error icon-right error-r"
+            placeholder="Error"
+          />
+          <label class="red">With explanation</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Right Icon</td>
+        <td>Success</td>
+        <td>
+          <input
+            type="text"
+            class="type1 success icon-right success-r"
+            placeholder="Success"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Inputs Right Icon</td>
+        <td>Info</td>
+        <td>
+          <input
+            type="text"
+            class="type1 alert icon-right alert-r"
+            placeholder="Alert"
+          />
+          <br />
+          <label class="yellow">With explanation</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Text Right Icon</td>
+        <td>Disabled</td>
+        <td>
+          <input
+            type="text"
+            class="type1 icon-right"
+            placeholder="Disable"
+            disabled
+          />
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function myFunction(x) {
+        if (x.value == "") {
+          x.style.backgroundImage = "url(eye-off.svg)";
+        } else {
+          x.style.backgroundImage = "url(eye.svg)";
+        }
+      }
+      function myFunction_left(x) {
+        if (x.value == "") {
+          x.style.backgroundImage = "url(user-grey.svg)";
+        } else {
+          x.style.backgroundImage = "url(user.svg)";
+        }
+      }
+    </script>
+  </body>
+</html>
