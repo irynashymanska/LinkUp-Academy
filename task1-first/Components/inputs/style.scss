@@ -49,14 +49,14 @@ table {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  &th {
+  th {
     background: #e6eeff;
   }
-  &td {
+  td {
     border-bottom: 1px solid rgba(0, 82, 255, 0.16);
     text-align: center;
   }
-  &tr {
+  tr {
     font-family: $font-family_2;
     font-style: normal;
     font-weight: 400;

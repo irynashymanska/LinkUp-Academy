@@ -35,16 +35,16 @@ table {
   text-align: center;
 }
 
-tableth {
+table th {
   background: #e6eeff;
 }
 
-tabletd {
+table td {
   border-bottom: 1px solid rgba(0, 82, 255, 0.16);
   text-align: center;
 }
 
-tabletr {
+table tr {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;

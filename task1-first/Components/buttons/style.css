@@ -43,16 +43,16 @@ table {
   text-align: center;
 }
 
-th {
+table th {
   background: var(--background2);
 }
 
-td {
+table td {
   border-bottom: 1px solid rgba(0, 82, 255, 0.16);
   text-align: center;
 }
 
-tr {
+table tr {
   font-weight: 400;
 }
 
