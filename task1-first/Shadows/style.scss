@@ -2,7 +2,6 @@
 html {
   font-family: "Inter", sans-serif;
 }
-
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
@@ -19,13 +18,16 @@ html {
   --top-l2: rgba(25, 1, 52, 0.16);
 }
 
+$color_1: var(--text-color);
+$font-family_1: "Inter", sans-serif;
+$white: var(--white);
+
 body {
-  background-color: var(--white);
-  color: var(--text-color);
-  font-family: "Inter", sans-serif;
+  background-color: $white;
+  color: $color_1;
+  font-family: $font-family_1;
   font-style: normal;
 }
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +37,6 @@ ul {
   margin: 0 auto;
   justify-content: space-around;
 }
-
 .shad {
   border-radius: 4px;
   padding: 10px;
@@ -51,7 +52,6 @@ ul {
   flex-direction: column;
   overflow: hidden;
 }
-
 .text {
   padding: 5px;
   margin: 5px;
@@ -63,28 +63,21 @@ ul {
   flex-direction: column;
   overflow: hidden;
 }
-
 .bottom-border {
   box-shadow: inset 0px -1px 0px var(--bottom-top-border);
 }
-
 .bottom-l1 {
   box-shadow: 0px 2px 10px var(--bottom-top-l1);
 }
-
 .bottom-l2 {
   box-shadow: 0px 4px 10px var(--bottom-l2);
 }
-
 .top-border {
   box-shadow: inset 0px 1px 0px var(--bottom-top-border);
 }
-
 .top-l1 {
   box-shadow: 0px 2px 10px var(--bottom-top-l1);
 }
-
 .top-l2 {
   box-shadow: 0px -4px 10px var(--top-l2);
 }
-/*# sourceMappingURL=style.css.map */
