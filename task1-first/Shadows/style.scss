@@ -8,11 +8,6 @@ html {
   }
 }
 
-
-$color_1: var(--text-color);
-$font-family_1: "Inter", sans-serif;
-$background-color_1: var(--white);
-
 :root {
 	--text-color: #00194c;
 	--bcgrnd: #f2f2f2;
@@ -22,8 +17,13 @@ $background-color_1: var(--white);
 	--bottom-l2: rgba(1, 21, 52, 0.16);
 	--top-l2: rgba(25, 1, 52, 0.16);
 }
+
+$color_1: var(--text-color);
+$font-family_1: "Inter", sans-serif;
+$white: var(--white);
+
 body {
-	background-color: $background-color_1;
+	background-color: $white;
 	color: $color_1;
 	font-family: $font-family_1;
 	font-style: normal;

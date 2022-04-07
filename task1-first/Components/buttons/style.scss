@@ -7,15 +7,6 @@ html {
     font-family: "Inter var", sans-serif;
   }
 }
-
-$color_1: var(--textcolor);
-$color_2: var(--white);
-$color_3: var(--color-disabled1);
-$color_4: var(--color-disabled2);
-$color_5: var(--background1);
-$font-family_1: "Inter", sans-serif;
-$background-color_1: var(--background-color);
-
 :root {
 	--background-color: #e5e5e5;
 	--textcolor: #00194c;
@@ -31,6 +22,15 @@ $background-color_1: var(--background-color);
 	--color-s: 100%;
 	--color-l: 50%;
 }
+
+$color_1: var(--textcolor);
+$color_2: var(--white);
+$color_3: var(--color-disabled1);
+$color_4: var(--color-disabled2);
+$color_5: var(--background1);
+$font-family_1: "Inter", sans-serif;
+$background-color_1: var(--background-color);
+
 body {
 	background-color: $background-color_1;
 	color: $color_1;

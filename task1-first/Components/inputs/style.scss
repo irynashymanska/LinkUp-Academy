@@ -9,23 +9,6 @@ html {
   }
 }
 
-
-$color_1: #00194c;
-$color_2: var(--pressed);
-$color_3: var(--error);
-$color_4: var(--info);
-$color_5: var(--normal);
-$color_6: var(--success);
-$font-family_1: "SF Pro Text", sans-serif;
-$font-family_2: "Inter", sans-serif;
-$background-color_1: #e5e5e5;
-$background-color_2: #f2f2f2;
-$border-color_1: var(--normal);
-$border-color_2: var(--main);
-$border-color_3: var(--success);
-$border-color_4: var(--error);
-$border-color_5: var(--info);
-
 :root {
 	--normal: #bdbdbd;
 	--pressed: #00194c;
@@ -34,9 +17,27 @@ $border-color_5: var(--info);
 	--success: #53d86a;
 	--main: #0052ff;
 }
+
+$stratos: var(--pressed);
+$red_orange: var(--error);
+$sunglow: var(--info);
+$silver: var(--normal);
+$emerald: var(--success);
+$font-family_1: "SF Pro Text", sans-serif;
+$font-family_2: "Inter", sans-serif;
+$mercury: #e5e5e5;
+$concrete: #f2f2f2;
+
+
+$border-color_1: var(--normal);
+$border-color_2: var(--main);
+$border-color_3: var(--success);
+$border-color_4: var(--error);
+$border-color_5: var(--info);
+
 body {
-	background-color: $background-color_1;
-	color: $color_1;
+	background-color: $mercury;
+	color: $stratos;
 }
 table {
 	position: relative;
@@ -48,19 +49,20 @@ table {
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
+	&th {
+		background: #e6eeff;
+	}
+	&td {
+		border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+		text-align: center;
+	}
+	&tr {
+		font-family: $font-family_2;
+		font-style: normal;
+		font-weight: 400;
+	}
 }
-th {
-	background: #e6eeff;
-}
-td {
-	border-bottom: 1px solid rgba(0, 82, 255, 0.16);
-	text-align: center;
-}
-tr {
-	font-family: $font-family_2;
-	font-style: normal;
-	font-weight: 400;
-}
+
 input {
 	text-indent: 16px;
 	height: 50px;
@@ -68,8 +70,8 @@ input {
 	border: 1px solid;
 	box-sizing: border-box;
 	border-radius: 4px;
-	border-color: $border-color_1;
-	color: $color_2;
+	border-color: $mercury;
+	color: $stratos;
 }
 label {
 	display: inline-block;
@@ -83,10 +85,10 @@ label {
 	margin-top: 8px;
 }
 .red {
-	color: $color_3;
+	color: $red_orange;
 }
 .yellow {
-	color: $color_4;
+	color: $sunglow;
 }
 .type1 {
 	border-color: $border-color_1;
@@ -98,7 +100,7 @@ label {
 	font-size: 14px;
 	line-height: 22px;
 	&::placeholder {
-		color: $color_5;
+		color: $silver;
 	}
 	&:focus {
 		outline: none;
@@ -108,24 +110,24 @@ label {
 		border-color: $border-color_2;
 	}
 	&:disabled {
-		background-color: $background-color_2;
+		background-color: $concrete;
 		border: none;
 		cursor: not-allowed;
 	}
 }
 .error {
 	&::placeholder {
-		color: $color_3;
+		color: $red_orange;
 	}
 }
 .success {
 	&::placeholder {
-		color: $color_6;
+		color: $emerald;
 	}
 }
 .alert {
 	&::placeholder {
-		color: $color_4;
+		color: $sunglow;
 	}
 }
 .type1.success {

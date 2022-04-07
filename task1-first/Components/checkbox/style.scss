@@ -1,16 +1,15 @@
-$background-color_1: #e5e5e5;
-$border-color_1: var(--second);
 
-/*Switch*/
-/*Radio*/
-/*Checkbox*/
 :root {
 	--white: #ffffff;
 	--main: #0052ff;
 	--second: #e6eeff;
 }
+
+$mercury: #e5e5e5;
+$border-color_1: var(--second);
+
 body {
-	background-color: $background-color_1;
+	background-color: $mercury;
 }
 div {
 	display: flex;

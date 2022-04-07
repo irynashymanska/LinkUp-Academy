@@ -41,39 +41,39 @@ body {
 }
 
 #a1 {
-  background-color: hsl(221, 100%, calc(50% * 1.85));
+  background-color: #e6eeff;
 }
 
 #a2 {
-  background-color: hsl(221, 100%, calc(50% * 1.65));
+  background-color: #b3cbff;
 }
 
 #a3 {
-  background-color: hsl(221, 100%, calc(50% * 1.45));
+  background-color: #80a9ff;
 }
 
 #a4 {
-  background-color: hsl(221, 100%, calc(50% * 1.25));
+  background-color: #4d86ff;
 }
 
 #a5 {
-  background-color: hsl(221, 100%, calc(50% * 1));
+  background-color: #0052ff;
 }
 
 #a6 {
-  background-color: hsl(221, 100%, calc(50% * 0.9));
+  background-color: #004ae6;
 }
 
 #a7 {
-  background-color: hsl(221, 100%, calc(50% * 0.75));
+  background-color: #0039b3;
 }
 
 #a8 {
-  background-color: hsl(221, 100%, calc(50% * 0.55));
+  background-color: #002980;
 }
 
 #a9 {
-  background-color: hsl(221, 100%, calc(50% * 0.35));
+  background-color: #00194d;
 }
 
 #b1 {
