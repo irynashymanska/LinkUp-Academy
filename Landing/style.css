@@ -1,0 +1,558 @@
+@font-face {
+  src: url(fonts/saudagar_400.ttf);
+  font-family: Saudagar;
+  src: url(fonts/saudagar_400.woff2) format("woff2"), url(fonts/saudagar_400.woff) format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(fonts/SukhumvitSet-Text.ttf);
+  font-family: Sukhumvit;
+  src: url(fonts/sukhumvitset-text-webfont.woff2) format("woff2"), url(fonts/sukhumvitset-text-webfont.woff) format("woff");
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  width: 1920px;
+  max-width: 1920px;
+}
+
+.page1 {
+  background-image: url("images/salon.svg");
+  height: 161vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.color-overlay {
+  background-color: rgba(0, 0, 0, 0.72);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.first-page-button {
+  width: 282px;
+  height: 59px;
+  background: #dcac9b;
+  border-radius: 2px;
+  font-family: Sukhumvit;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 172%;
+  text-align: center;
+  color: #1a1a1a;
+  border: none;
+}
+
+.div-button {
+  padding-top: 70px;
+}
+
+.centre {
+  padding-right: 10px;
+}
+
+.first-text-centre {
+  overflow: hidden;
+  font-family: Saudagar;
+  font-weight: 400;
+  font-size: 17.188rem;
+  line-height: 100%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  animation: type 4.5s steps(100, end) infinite;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: "hide";
+  }
+}
+
+.first-text-bottom {
+  font-family: Sukhumvit;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.header {
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.img-logo {
+  width: 151px;
+  height: 51px;
+}
+
+.header a {
+  float: left;
+  color: #ffffff;
+  font-family: Sukhumvit;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding-left: 66px;
+}
+
+.header a.logo {
+  padding-left: 115px;
+}
+
+.header-right {
+  float: right;
+  padding-right: 115px;
+}
+
+.page2 {
+  background: #1a1a1a;
+  color: #ffffff;
+  height: 171.5vh;
+}
+
+.top-text {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: Saudagar;
+  font-weight: 400;
+  font-size: 19.6rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  opacity: 0.06;
+  text-align: justify;
+  white-space: nowrap;
+}
+
+.second-text-centre {
+  font-family: Saudagar;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 211px;
+}
+
+.second-text-bottom {
+  font-family: Sukhumvit;
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 172%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 46px;
+}
+
+.makeup {
+  padding-top: 32vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.right-text {
+  display: table-cell;
+  vertical-align: middle;
+  flex: 50%;
+  font-family: Saudagar;
+  font-weight: 400;
+}
+
+.picture {
+  display: table-cell;
+  flex: 50%;
+  padding-left: 210px;
+  padding-right: 250px;
+}
+
+.page3 {
+  height: 1555px;
+  background: #ffffff;
+  padding-top: 45.5vh;
+  display: flex;
+  align-items: center;
+}
+
+.t-one {
+  color: #dcac9b;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.t-two {
+  font-size: 3.125rem;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.t-two.white {
+  color: #ffffff;
+}
+
+.t-two.white.black {
+  color: #1a1a1a;
+}
+
+.t-three {
+  font-family: Sukhumvit;
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 172%;
+  padding-top: 47px;
+}
+
+.t-three.opacity-black {
+  color: rgba(26, 26, 26, 0.8);
+}
+
+.t-three.opasity-white {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.page4 {
+  height: 127.3vh;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+}
+
+.picture-right {
+  display: table-cell;
+  flex: 50%;
+  padding-right: 200px;
+  width: 580px;
+  height: 149.7vh;
+  padding-bottom: 155px;
+}
+
+.left-text {
+  display: table-cell;
+  vertical-align: middle;
+  flex: 50%;
+  font-family: Saudagar;
+  font-weight: 400;
+  padding-left: 283px;
+}
+
+.page5 {
+  height: 266vh;
+  padding-top: 240px;
+}
+
+.page5-text {
+  display: table-cell;
+  flex: 50%;
+  font-family: Saudagar;
+  font-weight: 400;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.picture-page5 {
+  padding-top: 210px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 120px;
+  display: block;
+  margin: auto;
+}
+
+.page5-soon {
+  font-family: Sukhumvit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.563rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 266px;
+}
+
+.page5-button {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.five-page-button {
+  width: 182px;
+  height: 52px;
+  background: #000000;
+  border-radius: 2px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  font-family: Sukhumvit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-transform: capitalize;
+}
+
+.dot {
+  height: 541px;
+  width: 541px;
+  background-color: #dcac9b;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parent {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  margin-top: 279px;
+}
+
+.circle {
+  margin-right: 37px;
+}
+
+.circle.first-circle {
+  margin-left: 115px;
+}
+
+.circle.img-circle {
+  display: inline-block;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.btn-r {
+  margin-left: 20px;
+}
+
+.btn-img {
+  vertical-align: middle;
+}
+
+img.del {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  height: 22.51px;
+  width: 17.22px;
+  padding-bottom: 4px;
+}
+
+.padding {
+  padding-right: 10px;
+}
+
+.astext {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.Up {
+  animation: 2s anim-Up ease-out infinite;
+}
+
+@keyframes anim-Up {
+  0% {
+    opacity: 0;
+    transform: translateX(80%);
+  }
+  50% {
+    opacity: 0.04;
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.moving-left {
+  transition: transform 0.3s ease;
+  transform: translateX(0px);
+}
+
+.moving-left:hover {
+  transform: translateX(80px);
+}
+
+.page6 {
+  height: 1080px;
+  background: #1a1a1a;
+}
+
+form {
+  color: #8e8e8e;
+  padding-top: 60px;
+  float: right;
+  margin-right: 199.5px;
+}
+
+input {
+  width: 560.5px;
+  background: none;
+  opacity: #ffffff, 0.7;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  height: 14px;
+}
+
+.formlabel {
+  font-family: Sukhumvit;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 165%;
+  text-transform: uppercase;
+}
+
+input, label {
+  display: block;
+}
+
+h2 {
+  font-family: Saudagar;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 130%;
+  padding-top: 120px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.last-img {
+  float: left;
+  padding-right: 190px;
+  height: 1080px;
+}
+
+.six-page-button {
+  width: 560px;
+  height: 59px;
+  background: #dcac9b;
+  border-radius: 2px;
+  font-family: Sukhumvit;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 172%;
+  text-align: center;
+  color: #1a1a1a;
+  border: none;
+}
+
+.icon-right {
+  float: right;
+  margin-top: 12px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+input:focus + label {
+  transform: translateY(-10px);
+}
+
+footer {
+  height: 16vh;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer-text {
+  margin-left: 1417px;
+  font-family: Sukhumvit;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 165%;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-left: 125px;
+}
+/*# sourceMappingURL=style.css.map */
