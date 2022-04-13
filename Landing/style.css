@@ -12,6 +12,13 @@
   font-weight: normal;
 }
 
+@media screen and (min-width: 780px) {
+  .full-width-img {
+    margin: auto;
+    width: 90%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +28,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  width: 1920px;
-  max-width: 1920px;
+  width: 125vw;
 }
 
 .page1 {
@@ -57,8 +63,8 @@ html {
 }
 
 .first-page-button {
-  width: 282px;
-  height: 59px;
+  width: 18.35vw;
+  height: 7.9vh;
   background: #dcac9b;
   border-radius: 2px;
   font-family: Sukhumvit;
@@ -71,11 +77,7 @@ html {
 }
 
 .div-button {
-  padding-top: 70px;
-}
-
-.centre {
-  padding-right: 10px;
+  padding-top: 9.38vh;
 }
 
 .first-text-centre {
@@ -87,10 +89,10 @@ html {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  animation: type 4.5s steps(100, end) infinite;
+  animation: typing 4.5s steps(100, end) infinite;
 }
 
-@keyframes type {
+@keyframes typing {
   0% {
     width: 0;
   }
@@ -115,12 +117,12 @@ html {
 
 .header {
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 10.72vh;
 }
 
 .img-logo {
-  width: 151px;
-  height: 51px;
+  width: 9.83vw;
+  height: 6.83vh;
 }
 
 .header a {
@@ -130,17 +132,17 @@ html {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.125rem;
-  line-height: 1.5rem;
-  padding-left: 66px;
+  line-height: 133%;
+  padding-left: 4.29vw;
 }
 
 .header a.logo {
-  padding-left: 115px;
+  padding-left: 7.49vw;
 }
 
 .header-right {
   float: right;
-  padding-right: 115px;
+  padding-right: 7.49vw;
 }
 
 .page2 {
@@ -165,11 +167,11 @@ html {
 .second-text-centre {
   font-family: Saudagar;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 130%;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 211px;
+  padding-top: 28.284vh;
 }
 
 .second-text-bottom {
@@ -179,7 +181,7 @@ html {
   line-height: 172%;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
-  padding-top: 46px;
+  padding-top: 6.166vh;
 }
 
 .makeup {
@@ -193,20 +195,18 @@ html {
 .right-text {
   display: table-cell;
   vertical-align: middle;
-  flex: 50%;
   font-family: Saudagar;
   font-weight: 400;
 }
 
 .picture {
   display: table-cell;
-  flex: 50%;
-  padding-left: 210px;
-  padding-right: 250px;
+  padding-left: 13.67vw;
+  padding-right: 16.27vw;
 }
 
 .page3 {
-  height: 1555px;
+  height: 208.44vh;
   background: #ffffff;
   padding-top: 45.5vh;
   display: flex;
@@ -240,7 +240,7 @@ html {
   font-weight: 300;
   font-size: 1.375rem;
   line-height: 172%;
-  padding-top: 47px;
+  padding-top: 6.3vh;
 }
 
 .t-three.opacity-black {
@@ -261,10 +261,10 @@ html {
 .picture-right {
   display: table-cell;
   flex: 50%;
-  padding-right: 200px;
-  width: 580px;
+  padding-right: 13.02vw;
+  width: 37.76vw;
   height: 149.7vh;
-  padding-bottom: 155px;
+  padding-bottom: 8.7%;
 }
 
 .left-text {
@@ -273,12 +273,12 @@ html {
   flex: 50%;
   font-family: Saudagar;
   font-weight: 400;
-  padding-left: 283px;
+  padding-left: 18.42vw;
 }
 
 .page5 {
   height: 266vh;
-  padding-top: 240px;
+  padding-top: 32.17vh;
 }
 
 .page5-text {
@@ -286,12 +286,13 @@ html {
   flex: 50%;
   font-family: Saudagar;
   font-weight: 400;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 13.02vw;
+  padding-right: 13.02vw;
 }
 
 .picture-page5 {
-  padding-top: 210px;
+  height: 126.54vh;
+  padding-top: 28.15vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -299,7 +300,7 @@ html {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 120px;
+  bottom: 16.08vh;
   display: block;
   margin: auto;
 }
@@ -313,19 +314,19 @@ html {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  padding-top: 266px;
+  padding-top: 35.66vh;
 }
 
 .page5-button {
-  padding-top: 50px;
+  padding-top: 6.7vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .five-page-button {
-  width: 182px;
-  height: 52px;
+  width: 11.85vw;
+  height: 6.970vh;
   background: #000000;
   border-radius: 2px;
   text-align: center;
@@ -335,14 +336,14 @@ html {
   font-family: Sukhumvit;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 133%;
   text-transform: capitalize;
 }
 
 .dot {
-  height: 541px;
-  width: 541px;
+  height: 72.52vh;
+  width: 72.52vh;
   background-color: #dcac9b;
   border-radius: 50%;
   display: inline-block;
@@ -378,15 +379,15 @@ html {
   position: relative;
   background-position: center;
   background-size: cover;
-  margin-top: 279px;
+  margin-top: 37.4vh;
 }
 
 .circle {
-  margin-right: 37px;
+  margin-right: 2.3125em;
 }
 
 .circle.first-circle {
-  margin-left: 115px;
+  margin-left: 7.1875em;
 }
 
 .circle.img-circle {
@@ -395,10 +396,12 @@ html {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  height: 71.4vh;
+  width: 71.4vh;
 }
 
 .btn-r {
-  margin-left: 20px;
+  margin-left: 1.25em;
 }
 
 .btn-img {
@@ -409,28 +412,147 @@ img.del {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  height: 22.51px;
+  height: 22.1px;
   width: 17.22px;
-  padding-bottom: 4px;
+  padding-bottom: 0.54vh;
+}
+
+img.play {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
 }
 
 .padding {
-  padding-right: 10px;
+  padding-right: 0.65vw;
 }
 
 .astext {
   display: inline-block;
   text-align: center;
-  margin-left: 10px;
+  margin-left: 0.625em;
 }
 
-.Up {
-  animation: 2s anim-Up ease-out infinite;
+.page6 {
+  height: 144.7vh;
+  background: #1a1a1a;
 }
 
-@keyframes anim-Up {
+form {
+  color: #8e8e8e;
+  padding-top: 8.04vh;
+  float: right;
+  margin-right: 12.46875em;
+}
+
+input {
+  width: 36.49vw;
+  background: none;
+  opacity: #ffffff, 0.7;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #ffffff;
+  margin-bottom: 3.125em;
+  height: 1.876vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.formlabel {
+  font-family: Sukhumvit;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 165%;
+  text-transform: uppercase;
+}
+
+input, label {
+  display: block;
+}
+
+h2 {
+  font-family: Saudagar;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 130%;
+  padding-top: 16.08vh;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.last-img {
+  float: left;
+  padding-right: 12.36vw;
+  height: 144.7vh;
+  width: 63.151vw;
+}
+
+.six-page-button {
+  width: 36.458vw;
+  height: 7.9vh;
+  background: #dcac9b;
+  border-radius: 2px;
+  font-family: Sukhumvit;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 172%;
+  text-align: center;
+  color: #1a1a1a;
+  border: none;
+}
+
+.icon-right {
+  float: right;
+  margin-top: 0.75em;
+}
+
+.box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+input:focus + label {
+  transform: translateY(-10px);
+}
+
+footer {
+  height: 14.7vh;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer-text {
+  margin-left: 88.5625em;
+  font-family: Sukhumvit;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 165%;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-left: 7.8125em;
+  height: 2.278vh;
+  width: 7.226vw;
+}
+
+.up {
+  animation: 2s anim-up ease-out infinite;
+}
+
+@keyframes anim-up {
   0% {
-    opacity: 0;
+    opacity: 0.02;
     transform: translateX(80%);
   }
   50% {
@@ -449,110 +571,5 @@ img.del {
 
 .moving-left:hover {
   transform: translateX(80px);
-}
-
-.page6 {
-  height: 1080px;
-  background: #1a1a1a;
-}
-
-form {
-  color: #8e8e8e;
-  padding-top: 60px;
-  float: right;
-  margin-right: 199.5px;
-}
-
-input {
-  width: 560.5px;
-  background: none;
-  opacity: #ffffff, 0.7;
-  border: none;
-  border-bottom: 2px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 2px;
-  color: #ffffff;
-  margin-bottom: 50px;
-  height: 14px;
-}
-
-.formlabel {
-  font-family: Sukhumvit;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 165%;
-  text-transform: uppercase;
-}
-
-input, label {
-  display: block;
-}
-
-h2 {
-  font-family: Saudagar;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 130%;
-  padding-top: 120px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.last-img {
-  float: left;
-  padding-right: 190px;
-  height: 1080px;
-}
-
-.six-page-button {
-  width: 560px;
-  height: 59px;
-  background: #dcac9b;
-  border-radius: 2px;
-  font-family: Sukhumvit;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 172%;
-  text-align: center;
-  color: #1a1a1a;
-  border: none;
-}
-
-.icon-right {
-  float: right;
-  margin-top: 12px;
-}
-
-.box {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-input:focus + label {
-  transform: translateY(-10px);
-}
-
-footer {
-  height: 16vh;
-  background-color: #000000;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.footer-text {
-  margin-left: 1417px;
-  font-family: Sukhumvit;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 165%;
-  text-align: center;
-}
-
-.footer-logo {
-  margin-left: 125px;
 }
 /*# sourceMappingURL=style.css.map */
