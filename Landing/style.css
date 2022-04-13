@@ -12,13 +12,6 @@
   font-weight: normal;
 }
 
-@media screen and (min-width: 780px) {
-  .full-width-img {
-    margin: auto;
-    width: 90%;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -36,13 +29,13 @@ html {
   height: 161vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
 }
 
 .color-overlay {
@@ -193,14 +186,11 @@ html {
 }
 
 .right-text {
-  display: table-cell;
-  vertical-align: middle;
   font-family: Saudagar;
   font-weight: 400;
 }
 
 .picture {
-  display: table-cell;
   padding-left: 13.67vw;
   padding-right: 16.27vw;
 }
@@ -291,7 +281,7 @@ html {
 }
 
 .picture-page5 {
-  height: 126.54vh;
+  height: 126.5vh;
   padding-top: 28.15vh;
   display: block;
   margin-left: auto;
@@ -301,7 +291,6 @@ html {
   top: 0;
   right: 0;
   bottom: 16.08vh;
-  display: block;
   margin: auto;
 }
 
@@ -325,8 +314,8 @@ html {
 }
 
 .five-page-button {
-  width: 11.85vw;
-  height: 6.970vh;
+  width: 182px;
+  height: 6.97vh;
   background: #000000;
   border-radius: 2px;
   text-align: center;
@@ -345,6 +334,7 @@ html {
   height: 72.52vh;
   width: 72.52vh;
   background-color: #dcac9b;
+  opacity: 0.6;
   border-radius: 50%;
   display: inline-block;
   animation-name: stretch;
@@ -396,6 +386,7 @@ html {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  opacity: 0.6;
   height: 71.4vh;
   width: 71.4vh;
 }
@@ -415,6 +406,7 @@ img.del {
   height: 22.1px;
   width: 17.22px;
   padding-bottom: 0.54vh;
+  vertical-align: middle;
 }
 
 img.play {
@@ -446,7 +438,7 @@ form {
 }
 
 input {
-  width: 36.49vw;
+  width: 35em;
   background: none;
   opacity: #ffffff, 0.7;
   border: none;
@@ -458,11 +450,6 @@ input {
   height: 1.876vh;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 .formlabel {
   font-family: Sukhumvit;
   font-style: normal;
@@ -472,7 +459,8 @@ img {
   text-transform: uppercase;
 }
 
-input, label {
+input,
+label {
   display: block;
 }
 
@@ -495,7 +483,7 @@ h2 {
 }
 
 .six-page-button {
-  width: 36.458vw;
+  width: 35.66vw;
   height: 7.9vh;
   background: #dcac9b;
   border-radius: 2px;
@@ -571,5 +559,126 @@ footer {
 
 .moving-left:hover {
   transform: translateX(80px);
+}
+
+@media (max-width: 1400px) {
+  #wrapper {
+    width: 100%;
+  }
+  #footer {
+    width: 100%;
+  }
+  #c-1,
+  #c-2,
+  #c-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 50vh;
+    width: 50vh;
+  }
+  .picture-page5 {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .last-img {
+    height: fit-content;
+    width: 40%;
+    margin-top: 30%;
+  }
+  .page5-soon {
+    padding-top: 10%;
+  }
+  h2 {
+    padding-right: 25%;
+  }
+  .formx {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .top-text {
+    font-size: 16.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #wrapper {
+    margin: 0 auto;
+  }
+  #footer {
+    margin: 0 auto;
+  }
+  .picture-page5 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  #c-1,
+  #c-2,
+  #c-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 36.26vh;
+    width: 36.26vh;
+  }
+  .top-text {
+    font-size: 6.8rem;
+    text-align: center;
+  }
+  .first-text-centre {
+    font-size: 9rem;
+    text-align: center;
+    margin: auto;
+  }
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+  }
+  .picture {
+    padding-bottom: 10%;
+  }
+  .first-text-bottom {
+    font-size: 1rem;
+  }
+  .five-page-button {
+    font-size: 0.7rem;
+  }
+  .footer-text {
+    font-size: 0.5rem;
+  }
+  .last-img {
+    width: 0%;
+  }
+  form {
+    float: left;
+  }
+  .picture-right {
+    height: 50%;
+    margin-left: 10%;
+  }
+  #logo {
+    width: fit-content;
+    height: fit-content;
+  }
+  .footer-text {
+    margin-left: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

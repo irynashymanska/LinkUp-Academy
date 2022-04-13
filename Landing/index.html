@@ -13,7 +13,7 @@
       <section class="color-overlay">
         <div class="header">
           <a href="#default" class="logo"
-            ><img src="images/logo.svg" class="img-logo"
+            ><img src="images/logo.svg" id="logo" class="img-logo"
           /></a>
 
           <div class="header-right">
@@ -29,7 +29,7 @@
             </a>
             <a href="#googleplay">
               <div>
-                <img src="images/googleplay.svg" class="del btn-img padding" />
+                <img src="images/googleplay.svg" class="btn-img padding" />
                 Google Play
               </div>
             </a>
@@ -48,7 +48,7 @@
       </section>
     </section>
     <!--Page 2-->
-    <section class="page2">
+    <section class="page2" id="wrapper">
       <p class="top-text up">Coming Soon</p>
       <p class="second-text-centre">
         Lash Experts to your doors <br />
@@ -68,7 +68,7 @@
       <img src="images/make.jpg" class="makeup" />
     </section>
     <!--Page 3-->
-    <section class="page3">
+    <section class="page3" id="wrapper">
       <img src="images/iphone.jpg" class="picture" />
 
       <div class="right-text moving-left">
@@ -81,7 +81,7 @@
       </div>
     </section>
     <!--Page 4-->
-    <section class="page4">
+    <section class="page4" id="wrapper">
       <div class="left-text moving-left">
         <p class="t-one">02</p>
         <p class="t-two white">Make good money</p>
@@ -93,7 +93,7 @@
       <img src="images/make2.png" class="picture-right" />
     </section>
     <!--Page 5-->
-    <section class="page5">
+    <section class="page5" id="wrapper">
       <div class="page5-text moving-left">
         <p class="t-one page5-top">03</p>
         <p class="t-two black">Make your skills sharper</p>
@@ -113,14 +113,16 @@
         </p>
       </div>
 
-      <div class="parent">
-        <span class="dot first-circle circle"></span>
-        <span class="dot circle"> </span>
-        <span><img src="images/Vector.png" class="circle img-circle" /></span>
+      <div class="parent" id="wrapper">
+        <span class="dot first-circle circle" id="c-1"></span>
+        <span class="dot circle" id="c-2"> </span>
+        <span
+          ><img src="images/Vector.png" class="circle img-circle" id="c-3"
+        /></span>
         <img src="images/phone.png" class="picture-page5" />
       </div>
 
-      <p class="page5-soon">Coming soon</p>
+      <p class="page5-soon" id="wrapper">Coming soon</p>
       <div class="page5-button">
         <div>
           <button class="five-page-button">
@@ -135,53 +137,54 @@
       </div>
     </section>
     <!--Page 6-->
-    <section class="page6">
+    <section class="page6" id="wrapper">
       <img src="images/com-image.png" class="last-img" />
-      <h2>subscribe</h2>
-      <form>
-        <div class="box">
-          <input type="text" id="fname" name="fname" />
-          <label for="fname" class="formlabel">First name</label>
-        </div>
-        <div class="box">
-          <input type="text" id="lname" name="lname" />
-          <label for="lname" class="formlabel">Last name</label>
-        </div>
-        <div class="box">
-          <input type="text" id="client" />
-          <label for="client" class="formlabel">
-            Interested in being a client or lashes
-            <img class="icon-right" src="images/Arrow .svg" />
-          </label>
-        </div>
-        <div class="box">
-          <input type="text" id="city" />
-          <label for="city" class="formlabel">City</label>
-        </div>
+      <div class="formx">
+        <h2>subscribe</h2>
+        <form>
+          <div class="box">
+            <input type="text" id="fname" name="fname" />
+            <label for="fname" class="formlabel">First name</label>
+          </div>
+          <div class="box">
+            <input type="text" id="lname" name="lname" />
+            <label for="lname" class="formlabel">Last name</label>
+          </div>
+          <div class="box">
+            <input type="text" id="client" />
+            <label for="client" class="formlabel">
+              Interested in being a client or lashes
+              <img class="icon-right" src="images/Arrow .svg" />
+            </label>
+          </div>
+          <div class="box">
+            <input type="text" id="city" />
+            <label for="city" class="formlabel">City</label>
+          </div>
 
-        <div class="box">
-          <input type="text" id="state" />
-          <label for="state" class="formlabel">State</label>
-        </div>
+          <div class="box">
+            <input type="text" id="state" />
+            <label for="state" class="formlabel">State</label>
+          </div>
 
-        <div class="box">
-          <input type="text" id="phone" />
-          <label for="phone" class="formlabel">Phone Number</label>
-        </div>
+          <div class="box">
+            <input type="text" id="phone" />
+            <label for="phone" class="formlabel">Phone Number</label>
+          </div>
 
-        <div class="box">
-          <input type="email" id="mail" />
-          <label for="mail" class="formlabel">Email</label>
-        </div>
-        <div class="div-button">
-          <button class="six-page-button">Subscribe</button>
-        </div>
-      </form>
-     
+          <div class="box">
+            <input type="email" id="mail" />
+            <label for="mail" class="formlabel">Email</label>
+          </div>
+          <div class="div-button">
+            <button class="six-page-button">Subscribe</button>
+          </div>
+        </form>
+      </div>
     </section>
 
-    <footer>
-      <img src="images/logo.svg" class=" footer-logo" />
+    <footer id="footer">
+      <img src="images/logo.svg" id="logo" class="footer-logo" />
       <p class="footer-text">© All Rights Reserved</p>
     </footer>
   </body>
