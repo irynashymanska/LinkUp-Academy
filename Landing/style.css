@@ -22,6 +22,7 @@ html {
   height: 100%;
   margin: 0;
   width: 125vw;
+  overflow-x: unset;
 }
 
 .page1 {
@@ -118,7 +119,7 @@ html {
   height: 6.83vh;
 }
 
-.header a {
+.header a, .header p {
   float: left;
   color: #ffffff;
   font-family: Sukhumvit;
@@ -129,7 +130,7 @@ html {
   padding-left: 4.29vw;
 }
 
-.header a.logo {
+.header a.logo, .header p.logo {
   padding-left: 7.49vw;
 }
 
@@ -201,6 +202,7 @@ html {
   padding-top: 45.5vh;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .t-one {
@@ -331,8 +333,10 @@ html {
 }
 
 .dot {
-  height: 72.52vh;
-  width: 72.52vh;
+  /*height: 72.52vh;
+  width: 72.52vh;*/
+  height: 33.8125em;
+  width: 33.8125em;
   background-color: #dcac9b;
   opacity: 0.6;
   border-radius: 50%;
@@ -387,8 +391,8 @@ html {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   opacity: 0.6;
-  height: 71.4vh;
-  width: 71.4vh;
+  height: 33.8125em;
+  width: 33.8125em;
 }
 
 .btn-r {
@@ -438,7 +442,7 @@ form {
 }
 
 input {
-  width: 35em;
+  width: 36.45vw;
   background: none;
   opacity: #ffffff, 0.7;
   border: none;
@@ -447,7 +451,11 @@ input {
   border-radius: 2px;
   color: #ffffff;
   margin-bottom: 3.125em;
-  height: 1.876vh;
+  font-family: Sukhumvit;
+}
+
+input:focus, input:hover {
+  outline: none;
 }
 
 .formlabel {
@@ -483,7 +491,7 @@ h2 {
 }
 
 .six-page-button {
-  width: 35.66vw;
+  width: 36.45vw;
   height: 7.9vh;
   background: #dcac9b;
   border-radius: 2px;
@@ -497,8 +505,8 @@ h2 {
 }
 
 .icon-right {
+  margin-top: 12px;
   float: right;
-  margin-top: 0.75em;
 }
 
 .box {
@@ -510,13 +518,14 @@ input:focus + label {
   transform: translateY(-10px);
 }
 
-footer {
+#footer {
   height: 14.7vh;
   background-color: #000000;
   color: #ffffff;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 .footer-text {
@@ -532,6 +541,20 @@ footer {
   margin-left: 7.8125em;
   height: 2.278vh;
   width: 7.226vw;
+}
+
+.light-btn:hover, .light-btn:focus {
+  background-color: #ebcec5;
+  cursor: pointer;
+}
+
+.five-page-button:focus, .five-page-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.main {
+  overflow-x: hidden;
 }
 
 .up {
