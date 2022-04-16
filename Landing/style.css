@@ -57,7 +57,7 @@ html {
 }
 
 .first-page-button {
-  width: 18.35vw;
+  width: 17.625em;
   height: 7.9vh;
   background: #dcac9b;
   border-radius: 2px;
@@ -119,7 +119,8 @@ html {
   height: 6.83vh;
 }
 
-.header a, .header p {
+.header a,
+.header p {
   float: left;
   color: #ffffff;
   font-family: Sukhumvit;
@@ -130,7 +131,8 @@ html {
   padding-left: 4.29vw;
 }
 
-.header a.logo, .header p.logo {
+.header a.logo,
+.header p.logo {
   padding-left: 7.49vw;
 }
 
@@ -294,6 +296,7 @@ html {
   right: 0;
   bottom: 16.08vh;
   margin: auto;
+  height: 756px;
 }
 
 .page5-soon {
@@ -333,8 +336,6 @@ html {
 }
 
 .dot {
-  /*height: 72.52vh;
-  width: 72.52vh;*/
   height: 33.8125em;
   width: 33.8125em;
   background-color: #dcac9b;
@@ -376,12 +377,9 @@ html {
   margin-top: 37.4vh;
 }
 
-.circle {
-  margin-right: 2.3125em;
-}
-
 .circle.first-circle {
-  margin-left: 7.1875em;
+  margin-left: 7.4869vw;
+  margin-right: 2.408vw;
 }
 
 .circle.img-circle {
@@ -393,6 +391,7 @@ html {
   opacity: 0.6;
   height: 33.8125em;
   width: 33.8125em;
+  margin-left: 2.408vw;
 }
 
 .btn-r {
@@ -454,7 +453,8 @@ input {
   font-family: Sukhumvit;
 }
 
-input:focus, input:hover {
+input:focus,
+input:hover {
   outline: none;
 }
 
@@ -529,7 +529,7 @@ input:focus + label {
 }
 
 .footer-text {
-  margin-left: 88.5625em;
+  margin-left: 92.25vw;
   font-family: Sukhumvit;
   font-weight: 400;
   font-size: 1rem;
@@ -543,12 +543,14 @@ input:focus + label {
   width: 7.226vw;
 }
 
-.light-btn:hover, .light-btn:focus {
+.light-btn:hover,
+.light-btn:focus {
   background-color: #ebcec5;
   cursor: pointer;
 }
 
-.five-page-button:focus, .five-page-button:hover {
+.five-page-button:focus,
+.five-page-button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -642,7 +644,7 @@ input:focus + label {
     margin: 0 auto;
   }
   .picture-page5 {
-    height: 50%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -687,10 +689,15 @@ input:focus + label {
     font-size: 0.5rem;
   }
   .last-img {
-    width: 0%;
+    width: 30%;
+    height: fit-content;
+  }
+  h2 {
+    padding-top: 40%;
   }
   form {
-    float: left;
+    padding-left: 25%;
+    padding-top: 40%;
   }
   .picture-right {
     height: 50%;
@@ -702,6 +709,114 @@ input:focus + label {
   }
   .footer-text {
     margin-left: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  #wrapper {
+    margin: 0 auto;
+  }
+  #footer {
+    margin: 0 auto;
+  }
+  .picture-page5 {
+    height: 50%;
+  }
+  #c-1,
+  #c-2,
+  #c-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 32vh;
+    width: 32vh;
+  }
+  .top-text {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+  form {
+    margin-right: 0, auto;
+    float: left;
+    width: 100%;
+  }
+  input,
+  .six-page-button {
+    width: 240px;
+  }
+  h2 {
+    margin-top: 10%;
+  }
+  .first-text-centre {
+    font-size: 8rem;
+    text-align: center;
+    margin: auto;
+  }
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+  }
+  .picture {
+    width: 80%;
+    padding-top: none;
+  }
+  .page3 {
+    height: 95%;
+  }
+  .right-text {
+    padding-bottom: 30%;
+  }
+  .five-page-button {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 0;
+  }
+  .page5-b {
+    margin-left: 10%;
+    flex-direction: column;
+  }
+  .t-two {
+    font-size: 30px;
+  }
+  .first-text-bottom {
+    font-size: 1rem;
+  }
+  .five-page-button {
+    font-size: 0.7rem;
+  }
+  .footer-text {
+    font-size: 0.5rem;
+  }
+  .last-img {
+    width: 20%;
+  }
+  .picture-right {
+    height: 50%;
+    margin-left: 10%;
+  }
+  #logo {
+    width: 20%;
+    height: 20%;
+    padding-left: 0, auto;
+  }
+  .footer-text {
+    margin-left: 25%;
+  }
+  .icon-right {
+    margin-top: 0, auto;
+    margin-right: 10%;
+  }
+  .img-logo {
+    width: 50%;
+    height: 50%;
+  }
+  .header a,
+  .header p {
+    padding-top: 10%;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
