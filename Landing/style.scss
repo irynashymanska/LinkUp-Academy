@@ -29,13 +29,12 @@ body,
 html {
   height: 100%;
   margin: 0;
-  width: 125vw;
   overflow-x: unset;
 }
 
 .page1 {
   background-image: url("images/salon.svg");
-  height: 161vh;
+  height: 75rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -65,7 +64,7 @@ html {
 
 .first-page-button {
   width: 17.625em;
-  height: 7.9vh;
+  height: 3.688rem;
   background: $accent-color;
   border-radius: 2px;
   font-family: Sukhumvit;
@@ -78,7 +77,7 @@ html {
 }
 
 .div-button {
-  padding-top: 9.38vh;
+  padding-top: 4.375rem;
 }
 
 .first-text-centre {
@@ -118,11 +117,11 @@ html {
 
 .header {
   overflow: hidden;
-  padding-top: 10.72vh;
+  padding-top: 5rem;
 }
 .img-logo {
-  width: 9.83vw;
-  height: 6.83vh;
+  width: 9.438rem;
+  height: 3.188rem;
 }
 .header a,
 .header p {
@@ -133,21 +132,21 @@ html {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 133%;
-  padding-left: 4.29vw;
+  padding-left: 4.063rem;
   &.logo {
-    padding-left: 7.49vw;
+    padding-left: 7.188rem;
   }
 }
 
 .header-right {
   float: right;
-  padding-right: 7.49vw;
+  padding-right: 7.188rem;
 }
 
 .page2 {
   background: $black;
   color: $white;
-  height: 171.5vh;
+  height: 80rem;
 }
 
 .top-text {
@@ -170,7 +169,7 @@ html {
   line-height: 130%;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 28.284vh;
+  padding-top: 13.188rem;
 }
 
 .second-text-bottom {
@@ -180,31 +179,30 @@ html {
   line-height: 172%;
   text-align: center;
   color: rgba($white, 0.8);
-  padding-top: 6.166vh;
+  padding-top: 2.875rem;
 }
 
 .makeup {
-  padding-top: 32vh;
+  padding-top: 14.875rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-
-.right-text {
+.right-text,
+.left-text {
   font-family: Saudagar;
   font-weight: 400;
 }
-
 .picture {
-  padding-left: 13.67vw;
-  padding-right: 16.27vw;
+  padding-left: 17.688rem;
+  padding-right: 15.625rem;
 }
 
 .page3 {
-  height: 208.44vh;
+  height: 97.188rem;
   background: $white;
-  padding-top: 45.5vh;
+  padding-top: 21.25rem;
   display: flex;
   align-items: center;
   overflow-x: hidden;
@@ -235,7 +233,7 @@ html {
   font-weight: 300;
   font-size: 1.375rem;
   line-height: 172%;
-  padding-top: 6.3vh;
+  padding-top: 2.938rem;
   &.opacity-black {
     color: rgba($black, 0.8);
   }
@@ -245,32 +243,36 @@ html {
 }
 
 .page4 {
-  height: 127.3vh;
+  height: 59.375rem;
   background: $black;
-  display: flex;
   align-items: center;
+  display: flex;
+}
+
+.img-page4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  height: 100%;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 .picture-right {
-  display: table-cell;
-  flex: 50%;
-  padding-right: 13.02vw;
-  width: 37.76vw;
-  height: 149.7vh;
-  padding-bottom: 8.7%;
+  flex: auto;
+  padding-right: 12.5rem;
+  height: 110%;
+  justify-self: flex-end;
 }
 .left-text {
-  display: table-cell;
-  vertical-align: middle;
+  padding-left: 17.688rem;
   flex: 50%;
-  font-family: Saudagar;
-  font-weight: 400;
-  padding-left: 18.42vw;
 }
 
 .page5 {
-  height: 266vh;
-  padding-top: 32.17vh;
+  height: 124rem;
+  padding-top: 15rem;
 }
 
 .page5-text {
@@ -278,13 +280,13 @@ html {
   flex: 50%;
   font-family: Saudagar;
   font-weight: 400;
-  padding-left: 13.02vw;
-  padding-right: 13.02vw;
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
 }
 
 .picture-page5 {
-  height: 126.5vh;
-  padding-top: 28.15vh;
+  height: 47.25rem;
+  padding-top: 13.125rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -292,9 +294,8 @@ html {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 16.08vh;
+  bottom: 9.125rem;
   margin: auto;
-  height: 756px;
 }
 
 .page5-soon {
@@ -306,17 +307,17 @@ html {
   text-transform: uppercase;
   color: $accent-black;
   text-align: center;
-  padding-top: 35.66vh;
+  padding-top: 7.5rem;
 }
 .page5-button {
-  padding-top: 6.7vh;
+  padding-top: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .five-page-button {
-  width: 182px;
-  height: 6.97vh;
+  width: 11.375rem;
+  height: 3.25rem;
   background: $accent-black;
   border-radius: 2px;
   text-align: center;
@@ -331,9 +332,9 @@ html {
   text-transform: capitalize;
 }
 
-.dot {
-  height: 33.8125em;
-  width: 33.8125em;
+.circle {
+  height: 33.813rem;
+  width: 33.813rem;
   background-color: $accent-color;
   opacity: 0.6;
   border-radius: 50%;
@@ -371,25 +372,23 @@ html {
   position: relative;
   background-position: center;
   background-size: cover;
-  margin-top: 37.4vh;
+  margin-top: 17.438rem;
 }
 
-.circle {
-  &.first-circle {
-    margin-left: 7.4869vw;
-    margin-right: 2.408vw;
-  }
-  &.img-circle {
-    display: inline-block;
-    animation-name: rotate;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    opacity: 0.6;
-    height: 33.8125em;
-    width: 33.8125em;
-    margin-left: 2.408vw;
-  }
+.first-circle {
+  margin-left: 7.188rem;
+  margin-right: 2.313rem;
+}
+.img-circle {
+  display: inline-block;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0.6;
+  height: 33.8125em;
+  width: 33.8125em;
+  margin-right: 7.218125em;
 }
 
 .btn-r {
@@ -405,7 +404,7 @@ img.del {
   position: relative;
   height: 22.1px;
   width: 17.22px;
-  padding-bottom: 0.54vh;
+  padding-bottom: 0.25rem;
   vertical-align: middle;
 }
 
@@ -416,7 +415,7 @@ img.play {
 }
 
 .padding {
-  padding-right: 0.65vw;
+  padding-right: 0.625rem;
 }
 
 .astext {
@@ -426,17 +425,17 @@ img.play {
 }
 
 .page6 {
-  height: 144.7vh;
+  height: 67.5rem;
   background: $black;
 }
 form {
   color: $form-text;
-  padding-top: 8.04vh;
+  padding-top: 3.75rem;
   float: right;
   margin-right: 12.46875em;
 }
 input {
-  width: 36.45vw;
+  width: 35.031rem;
   background: none;
   opacity: ($white, 0.7);
   border: none;
@@ -472,21 +471,20 @@ h2 {
   font-weight: 400;
   font-size: 3.125rem;
   line-height: 130%;
-  padding-top: 16.08vh;
+  padding-top: 7.5rem;
   text-transform: uppercase;
   color: $white;
 }
 
 .last-img {
   float: left;
-  padding-right: 12.36vw;
-  height: 144.7vh;
-  width: 63.151vw;
+  padding-right: 11.875rem;
+  height: 67.5rem;
 }
 
 .six-page-button {
-  width: 36.45vw;
-  height: 7.9vh;
+  width: 35rem;
+  height: 3.688rem;
   background: $accent-color;
   border-radius: 2px;
   font-family: Sukhumvit;
@@ -499,7 +497,7 @@ h2 {
 }
 
 .icon-right {
-  margin-top: 12px;
+  margin-top: 0.75rem;
   float: right;
 }
 
@@ -513,7 +511,7 @@ input:focus + label {
 }
 
 #footer {
-  height: 14.7vh;
+  height: 6.875rem;
   background-color: $accent-black;
   color: $white;
   display: flex;
@@ -523,7 +521,7 @@ input:focus + label {
 }
 
 .footer-text {
-  margin-left: 92.25vw;
+  margin-left: 89.813rem;
   font-family: Sukhumvit;
   font-weight: 400;
   font-size: 1rem;
@@ -531,9 +529,9 @@ input:focus + label {
   text-align: center;
 }
 .footer-logo {
-  margin-left: 7.8125em;
-  height: 2.278vh;
-  width: 7.226vw;
+  margin-left: 7.813rem;
+  height: 1.063rem;
+  width: 6.938rem;
 }
 
 .light-btn:hover,
