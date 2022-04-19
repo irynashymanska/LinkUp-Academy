@@ -247,7 +247,6 @@ html {
   background: $black;
   align-items: center;
   display: flex;
- 
 }
 
 .img-page4 {
@@ -301,7 +300,6 @@ html {
 
 .page5-soon {
   font-family: Sukhumvit;
-  font-style: normal;
   font-weight: 400;
   font-size: 1.563rem;
   line-height: 130%;
@@ -312,7 +310,7 @@ html {
 }
 .page5-button {
   padding-top: 3.125rem;
-    @include centre();
+  @include centre();
 }
 .five-page-button {
   width: 11.375rem;
@@ -323,7 +321,6 @@ html {
   border: none;
   text-align: center;
   font-family: Sukhumvit;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 133%;
@@ -452,7 +449,6 @@ input:hover {
 
 .formlabel {
   font-family: Sukhumvit;
-  font-style: normal;
   font-weight: 300;
   font-size: 1rem;
   line-height: 165%;
@@ -461,7 +457,6 @@ input:hover {
 
 h2 {
   font-family: Saudagar;
-  font-style: normal;
   font-weight: 400;
   font-size: 3.125rem;
   line-height: 130%;
@@ -603,7 +598,7 @@ input:focus + label {
   .picture-page5 {
     @include centre();
     flex-direction: column;
-    
+
     margin: auto;
     width: 16.9065rem;
     height: 16.9065rem;
@@ -765,7 +760,7 @@ input:focus + label {
   #footer {
     margin: 0 auto;
   }
-  .picture-page5{
+  .picture-page5 {
     width: 50%;
   }
   #c-1,
@@ -795,16 +790,16 @@ input:focus + label {
   .second-text-centre {
     font-size: 1.5rem;
   }
-  .picture-right{
+  .picture-right {
     max-height: 40%;
     padding-top: 25rem;
     padding-left: 7rem;
   }
-  
-  .page5-soon, .first-page5-b{
+
+  .page5-soon,
+  .first-page5-b {
     padding-top: 2rem;
   }
-  
 
   .page3 {
     display: flex;
@@ -864,7 +859,7 @@ input:focus + label {
     padding-right: 10%;
   }
 
-  h2{
+  h2 {
     font-size: 2rem;
   }
 
@@ -872,5 +867,4 @@ input:focus + label {
     max-width: 40%;
     padding-left: 30%;
   }
-
 }

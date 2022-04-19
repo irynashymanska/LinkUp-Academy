@@ -300,7 +300,6 @@ html {
 
 .page5-soon {
   font-family: Sukhumvit;
-  font-style: normal;
   font-weight: 400;
   font-size: 1.563rem;
   line-height: 130%;
@@ -326,7 +325,6 @@ html {
   border: none;
   text-align: center;
   font-family: Sukhumvit;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 133%;
@@ -458,7 +456,6 @@ input:hover {
 
 .formlabel {
   font-family: Sukhumvit;
-  font-style: normal;
   font-weight: 300;
   font-size: 1rem;
   line-height: 165%;
@@ -467,7 +464,6 @@ input:hover {
 
 h2 {
   font-family: Saudagar;
-  font-style: normal;
   font-weight: 400;
   font-size: 3.125rem;
   line-height: 130%;
@@ -810,7 +806,8 @@ input:focus + label {
     padding-top: 25rem;
     padding-left: 7rem;
   }
-  .page5-soon, .first-page5-b {
+  .page5-soon,
+  .first-page5-b {
     padding-top: 2rem;
   }
   .page3 {
