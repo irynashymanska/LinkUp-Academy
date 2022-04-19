@@ -32,17 +32,21 @@ html {
   overflow-x: unset;
 }
 
+@mixin centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page1 {
+  @include centre();
   background-image: url("images/salon.svg");
   height: 75rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -59,7 +63,6 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .first-page-button {
@@ -87,7 +90,6 @@ html {
   font-size: 17.188rem;
   line-height: 100%;
   color: $white;
-  text-align: center;
   text-transform: uppercase;
   animation: typing 4.5s steps(100, end) infinite;
 }
@@ -147,13 +149,13 @@ html {
   background: $black;
   color: $white;
   height: 80rem;
+  font-family: Saudagar;
+  font-weight: 400;
 }
 
 .top-text {
   padding: 0rem;
   margin: 0rem;
-  font-family: Saudagar;
-  font-weight: 400;
   font-size: 19.6rem;
   line-height: 100%;
   text-transform: uppercase;
@@ -163,8 +165,6 @@ html {
 }
 
 .second-text-centre {
-  font-family: Saudagar;
-  font-weight: 400;
   font-size: 3.125rem;
   line-height: 130%;
   text-align: center;
@@ -247,6 +247,7 @@ html {
   background: $black;
   align-items: center;
   display: flex;
+ 
 }
 
 .img-page4 {
@@ -311,16 +312,13 @@ html {
 }
 .page5-button {
   padding-top: 3.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    @include centre();
 }
 .five-page-button {
   width: 11.375rem;
   height: 3.25rem;
   background: $accent-black;
   border-radius: 2px;
-  text-align: center;
   color: $white;
   border: none;
   text-align: center;
@@ -395,7 +393,8 @@ html {
   margin-left: 1.25em;
 }
 
-.btn-img {
+.btn-img,
+img.del {
   vertical-align: middle;
 }
 img.del {
@@ -405,7 +404,6 @@ img.del {
   height: 22.1px;
   width: 17.22px;
   padding-bottom: 0.25rem;
-  vertical-align: middle;
 }
 
 img.play {
@@ -460,10 +458,6 @@ input:hover {
   line-height: 165%;
   text-transform: uppercase;
 }
-input,
-label {
-  display: block;
-}
 
 h2 {
   font-family: Saudagar;
@@ -514,9 +508,7 @@ input:focus + label {
   height: 6.875rem;
   background-color: $accent-black;
   color: $white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centre();
   overflow-x: hidden;
 }
 
@@ -575,7 +567,28 @@ input:focus + label {
   transform: translateX(80px);
 }
 
-@media (max-width: 1600px) {
+@media only screen and (max-width: 1900px) and (min-width: 1701px) {
+  .last-img {
+    height: fit-content;
+    max-width: 35%;
+    margin-top: 10%;
+    padding-left: 7rem;
+  }
+
+  h2 {
+    padding-right: 25%;
+  }
+  .formx {
+    @include centre();
+    flex-direction: column;
+    margin: auto;
+  }
+  .parent {
+    @include centre();
+  }
+}
+
+@media (max-width: 1700px) {
   #wrapper,
   #footer {
     width: 100%;
@@ -588,10 +601,9 @@ input:focus + label {
   #c-2,
   #c-3,
   .picture-page5 {
-    display: flex;
+    @include centre();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     margin: auto;
     width: 16.9065rem;
     height: 16.9065rem;
@@ -639,10 +651,8 @@ input:focus + label {
     padding-right: 25%;
   }
   .formx {
-    display: flex;
+    @include centre();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: auto;
   }
   #logo {
@@ -691,12 +701,11 @@ input:focus + label {
     width: fit-content;
   }
 
- 
   .page3 {
     height: 60rem;
   }
 
-  .img-page4{
+  .img-page4 {
     justify-content: center;
   }
   .picture-right {
@@ -708,11 +717,10 @@ input:focus + label {
     display: flex;
     flex-direction: column-reverse;
   }
-  .three-four, .page6{
-    display: flex;
+  .three-four,
+  .page6 {
+    @include centre();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .page6 {
@@ -721,16 +729,19 @@ input:focus + label {
     height: 115%;
   }
 
-  .left-text, .page5-text, form {
+  .left-text,
+  .page5-text,
+  form {
     padding-bottom: 3rem;
     padding-top: 3rem;
   }
-
-.formx{
-  padding-left: 10%;
-}
-  input, .six-page-button{
-    width: 400px;
+  .formx {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  input,
+  .six-page-button {
+    width: 350px;
   }
 
   #logo {
@@ -750,60 +761,57 @@ input:focus + label {
 }
 
 @media (max-width: 375px) {
-  #wrapper {
-    margin: 0 auto;
-  }
+  #wrapper,
   #footer {
     margin: 0 auto;
   }
-  .picture-page5 {
-    height: 50%;
+  .picture-page5{
+    width: 50%;
   }
   #c-1,
   #c-2,
   #c-3 {
-    display: flex;
+    @include centre();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: auto;
+    width: 9rem;
+    height: 9rem;
   }
   .top-text {
     font-size: 3.8rem;
     text-align: center;
   }
 
-  form {
-    margin-right: 0, auto;
-    float: left;
-    width: 100%;
-  }
-  input,
-  .six-page-button {
-    width: 240px;
-  }
-
-  h2 {
-    margin-top: 10%;
+  .first-text-bottom {
+    font-size: 0.7rem;
   }
 
   .first-text-centre {
-    font-size: 8rem;
-    text-align: center;
-    margin: auto;
+    font-size: 5rem;
   }
+  .first-page-button {
+    max-width: 60%;
+  }
+  .second-text-centre {
+    font-size: 1.5rem;
+  }
+  .picture-right{
+    max-height: 40%;
+    padding-top: 25rem;
+    padding-left: 7rem;
+  }
+  
+  .page5-soon, .first-page5-b{
+    padding-top: 2rem;
+  }
+  
+
   .page3 {
     display: flex;
     flex-direction: column;
-    margin-top: 25%;
-  }
-  .picture {
-    width: 80%;
-    padding-top: none;
-  }
-  .page3 {
     height: 95%;
   }
+
   .right-text {
     padding-bottom: 30%;
   }
@@ -812,42 +820,25 @@ input:focus + label {
     width: 80%;
     margin-top: 10%;
     margin-left: 0;
+    font-size: 0.7rem;
   }
   .page5-b {
     margin-left: 10%;
     flex-direction: column;
   }
-
   .t-two {
     font-size: 30px;
   }
-  .first-text-bottom {
-    font-size: 1rem;
-  }
-  .five-page-button {
-    font-size: 0.7rem;
-  }
 
-  .footer-text {
-    font-size: 0.5rem;
-  }
-
-  .last-img {
-    width: 20%;
-  }
-
-  .picture-right {
-    height: 50%;
-    margin-left: 10%;
-  }
   #logo {
     width: 20%;
     height: 20%;
     padding-left: 0, auto;
   }
   .footer-text {
-    margin-left: 25%;
+    margin-left: 20%;
   }
+
   .icon-right {
     margin-top: 0, auto;
     margin-right: 10%;
@@ -856,6 +847,30 @@ input:focus + label {
   .header a,
   .header p {
     padding-top: 10%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
+
+  .footer-text {
+    font-size: 0.5rem;
+  }
+
+  input,
+  .six-page-button {
+    width: 250px;
+  }
+
+  .formx {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  .last-img {
+    max-width: 40%;
+    padding-left: 30%;
+  }
+
 }
