@@ -21,6 +21,11 @@ $form-text: #8e8e8e;
   font-weight: normal;
 }
 
+@function toRem($value) {
+  $remValue: ($value / 16) + rem; 
+  @return $remValue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -156,7 +161,7 @@ html {
 .top-text {
   padding: 0rem;
   margin: 0rem;
-  font-size: 19.6rem;
+  font-size: 19.4rem;
   line-height: 100%;
   text-transform: uppercase;
   opacity: 0.06;
@@ -364,6 +369,8 @@ html {
 }
 .parent {
   position: relative;
+  justify-content: center;
+  align-items: center;
   background-position: center;
   background-size: cover;
   margin-top: 17.438rem;
@@ -432,7 +439,9 @@ form {
   padding-left: 72.5rem;
 }
 input {
-  width: 35.031rem;
+  max-width: 35.031rem;
+  width: 100%;
+  
   background: none;
   opacity: ($white, 0.7);
   border: none;
@@ -474,7 +483,7 @@ h2 {
 }
 
 .six-page-button {
-  width: 35rem;
+  width: 35.031rem;
   height: 3.688rem;
   background: $accent-color;
   border-radius: 2px;
@@ -603,7 +612,7 @@ input:focus + label {
   }
 }
 
-@media only screen and (max-width: 1900px) and (min-width: 1700px) {
+@media only screen and (max-width: 1919px) and (min-width: 1700px) {
   .parent {
     @include centre();
   }
@@ -615,7 +624,7 @@ input:focus + label {
   }
   .top-text {
     text-align: center;
-    font-size: 17.5rem;
+    font-size: 17.3rem;
   }
   .t-two {
     font-size: 3rem;
@@ -641,6 +650,8 @@ input:focus + label {
     text-align: center;
   }
 
+  
+
   .form-inline {
     flex-direction: column;
     align-items: stretch;
@@ -655,15 +666,15 @@ input:focus + label {
   #c-1,
   #c-2,
   #c-3 {
-    width: 31rem;
-    height: 31rem;
+    width: 30rem;
+    height: 30rem;
     margin: 0 auto;
   }
   form {
     padding-left: 0;
   }
   .last-img {
-    max-width: 50%;
+    max-width: 55%;
     padding-right: 3rem;
   }
   @include footer;
@@ -692,8 +703,9 @@ input:focus + label {
   #c-2,
   #c-3,
   .picture-page5 {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
   }
   .picture-page5 {
     height: fit-content;
@@ -705,12 +717,12 @@ input:focus + label {
     height: 87.5rem;
   }
   .last-img {
-    max-width: 45%;
+    max-width: 40%;
     padding-right: 3rem;
   }
 }
 
-@media (max-width: 1129px) {
+@media (max-width: 1130px) {
   .top-text {
     font-size: 9.6rem;
     text-align: center;
@@ -727,8 +739,8 @@ input:focus + label {
     flex-direction: column;
 
     margin: auto;
-    width: 16.9065rem;
-    height: 16.9065rem;
+    width: toRem(270.5);
+    height: toRem(270.5);
   }
   .picture-page5 {
     height: fit-content;
@@ -778,6 +790,13 @@ input:focus + label {
 
 @media (max-width: 850px) {
   @include footer();
+  .page1{
+    height: 65rem;
+  }
+  .form-inline {
+    flex-flow: row wrap;
+    align-items: center;
+  }
   .top-text {
     font-size: 4rem;
     text-align: center;
@@ -811,21 +830,21 @@ input:focus + label {
   form {
     padding-bottom: 3rem;
     padding-top: 3rem;
+    max-width: 85%;
   }
-  .formx {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  input,
   .six-page-button {
-    width: 110%;
+    max-width: 100%;
   }
 
+  .formx {
+    @include centre;
+  }
+ 
   .picture {
     max-width: 80%;
   }
   .page2 {
-    height: 800px;
+    height: toRem(800);
   }
 
   .makeup,
@@ -836,7 +855,7 @@ input:focus + label {
   .page3 {
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: toRem(1000);
     padding-top: 20rem;
   }
 
@@ -853,6 +872,9 @@ input:focus + label {
   .picture-right {
     max-height: 80%;
     justify-self: center;
+  }
+  .left-text{
+    padding-right: 4rem;
   }
 
   .three-four {
@@ -877,8 +899,8 @@ input:focus + label {
     height: 115%;
   }
   .last-img {
-    max-width: 50%;
-    padding-top: 12%;
+    max-width: 100%;
+    padding: 0;
     float: none;
     display: block;
     margin-left: auto;
@@ -887,9 +909,8 @@ input:focus + label {
 
   .icon-right {
     margin-top: 0 auto;
-    margin-left: 3rem;
+    margin-left: 0.5rem;
   }
-
   .header a,
   .header p {
     padding-top: 5%;
@@ -947,7 +968,7 @@ input:focus + label {
   }
 
   .page2 {
-    height: 35.5rem;
+    height: 45rem;
   }
 
   .makeup,
@@ -973,7 +994,9 @@ input:focus + label {
     font-size: 1.5rem;
   }
   .second-text-bottom {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    margin-right: 2rem ;
+    margin-left: 2rem ;
   }
   .t-one,
   .t-two {
@@ -994,7 +1017,7 @@ input:focus + label {
   .page3 {
     display: flex;
     flex-direction: column;
-    padding-top: 10rem;
+    padding-top: 15rem;
     height: 45rem;
   }
 
@@ -1021,22 +1044,34 @@ input:focus + label {
     padding-top: 0.3rem;
     padding-bottom: 5rem;
   }
+  .left-text{
+    padding-right: 4rem;
+  }
   .logo {
     padding-left: 0.4rem;
   }
+ 
+
   .icon-right {
-    margin-top: 0, auto;
-    margin-right: 10%;
+    margin-top: 0 auto;
+    margin-left: 0.5rem;
   }
 
-  input,
+  form {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    max-width: 80%;
+  }
+
+  input{
+    margin-bottom: 1.8em;
+  }
   .six-page-button {
-    width: 100%;
+    max-width: 100%;
   }
 
   .formx {
-    padding-left: 10%;
-    padding-right: 10%;
+    @include centre;
   }
 
   h2 {
@@ -1044,16 +1079,18 @@ input:focus + label {
   }
 
   .last-img {
-    max-width: 50%;
+    max-width: 100%;
     float: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+    padding-top: 4rem
   }
 
   @include footer();
   .footer-text {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
   #logo {
     max-width: 20%;
