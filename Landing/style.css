@@ -153,7 +153,6 @@ html {
   line-height: 100%;
   text-transform: uppercase;
   opacity: 0.06;
-  text-align: justify;
   white-space: nowrap;
 }
 
@@ -180,7 +179,7 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 95rem;
 }
 
 .right-text,
@@ -221,7 +220,7 @@ html {
   color: #ffffff;
 }
 
-.t-two.white.black {
+.t-two.black {
   color: #1a1a1a;
 }
 
@@ -332,12 +331,12 @@ html {
 }
 
 .circle {
-  height: 33.813rem;
-  width: 33.813rem;
   background-color: #dcac9b;
   opacity: 0.6;
   border-radius: 50%;
   display: inline-block;
+  height: 33.813rem;
+  width: 33.813rem;
   animation-name: stretch;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
@@ -374,7 +373,8 @@ html {
 }
 
 .first-circle {
-  margin-left: 7.188rem;
+  display: inline-block;
+  margin-left: 6.188rem;
   margin-right: 2.313rem;
 }
 
@@ -385,9 +385,10 @@ html {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   opacity: 0.6;
-  height: 33.8125em;
-  width: 33.8125em;
-  margin-right: 7.218125em;
+  height: 33.813rem;
+  width: 33.813rem;
+  margin-right: 6.218125em;
+  margin-left: 2.313rem;
 }
 
 .btn-r {
@@ -432,8 +433,7 @@ img.play {
 form {
   color: #8e8e8e;
   padding-top: 3.75rem;
-  float: right;
-  margin-right: 12.46875em;
+  padding-left: 72.5rem;
 }
 
 input {
@@ -494,7 +494,7 @@ h2 {
 
 .icon-right {
   margin-top: 0.75rem;
-  float: right;
+  margin-left: 15.47rem;
 }
 
 .box {
@@ -516,17 +516,20 @@ input:focus + label {
   overflow-x: hidden;
 }
 
+.form-inline {
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .footer-text {
   margin-left: 89.813rem;
   font-family: Sukhumvit;
   font-weight: 400;
   font-size: 1rem;
   line-height: 165%;
-  text-align: center;
 }
 
 .footer-logo {
-  margin-left: 7.813rem;
   height: 1.063rem;
   width: 6.938rem;
 }
@@ -574,38 +577,159 @@ input:focus + label {
   transform: translateX(80px);
 }
 
-@media only screen and (max-width: 1900px) and (min-width: 1701px) {
-  .last-img {
-    height: fit-content;
-    max-width: 35%;
-    margin-top: 10%;
-    padding-left: 7rem;
-  }
-  h2 {
-    padding-right: 25%;
-  }
-  .formx {
+@media only screen and (max-width: 1900px) and (min-width: 1700px) {
+  .parent {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #c-1,
+  #c-2,
+  #c-3 {
+    width: 31rem;
+    height: 31rem;
+  }
+  .top-text {
+    text-align: center;
+    font-size: 17.5rem;
+  }
+  .t-two {
+    font-size: 3rem;
+  }
+  .form-inline {
     flex-direction: column;
-    margin: auto;
+    align-items: stretch;
+  }
+  form {
+    padding-left: 0;
+  }
+  .footer-text {
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+  .footer-logo {
+    margin-left: 3rem;
+  }
+  .last-img {
+    padding-right: 8rem;
+  }
+}
+
+@media only screen and (max-width: 1699px) and (min-width: 1400px) {
+  .top-text {
+    font-size: 14rem;
+    text-align: center;
+  }
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .makeup {
+    width: 100%;
   }
   .parent {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  #c-1,
+  #c-2,
+  #c-3 {
+    width: 31rem;
+    height: 31rem;
+    margin: 0 auto;
+  }
+  form {
+    padding-left: 0;
+  }
+  .last-img {
+    max-width: 50%;
+    padding-right: 3rem;
+  }
+  .footer-text {
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+  .footer-logo {
+    margin-left: 3rem;
+  }
+  .right-text {
+    padding-left: 2rem;
+  }
+  .left-text {
+    padding-right: 2rem;
+  }
+  .picture {
+    padding-right: 10%;
+  }
 }
 
-@media (max-width: 1700px) {
-  #wrapper,
-  #footer {
+@media (max-width: 1399px) and (min-width: 1130px) {
+  .top-text {
+    font-size: 12.3rem;
+    text-align: center;
+  }
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #c-1,
+  #c-2,
+  #c-3,
+  .picture-page5 {
+    width: 20rem;
+    height: 20rem;
+  }
+  .picture-page5 {
+    height: fit-content;
+    margin: auto;
+  }
+  .second-text-bottom {
+    font-size: 1.125rem;
+  }
+  .left-text,
+  .page5-text,
+  .picture-right,
+  .picture {
+    padding-left: 5rem;
+  }
+  .page5-text,
+  .right-text,
+  .picture-right,
+  .picture {
+    padding-right: 5rem;
+  }
+  .makeup {
     width: 100%;
   }
+  .footer-text {
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+  .footer-logo {
+    margin-left: 3rem;
+  }
+  form {
+    padding-left: 0;
+  }
+  .page5 {
+    height: 87.5rem;
+  }
+  .last-img {
+    max-width: 45%;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 1129px) {
   .top-text {
-    font-size: 10rem;
+    font-size: 9.6rem;
     text-align: center;
+  }
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
   }
   #c-1,
   #c-2,
@@ -626,9 +750,6 @@ input:focus + label {
     margin-top: auto;
   }
   .second-text-bottom {
-    font-size: 2.5rem;
-  }
-  .second-text-bottom {
     font-size: 1.125rem;
   }
   .left-text,
@@ -643,20 +764,27 @@ input:focus + label {
   .picture {
     padding-right: 5rem;
   }
-  .picture {
-    max-width: 100%;
-    width: fit-content;
+  .makeup {
+    width: 100%;
   }
-  .picture-right {
-    max-height: 80%;
+  .footer-text {
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+  .footer-logo {
+    margin-left: 3rem;
+  }
+  form {
+    padding-left: 0;
   }
   .last-img {
     height: fit-content;
-    max-width: 35%;
-    margin-top: 20%;
+    max-width: 30%;
+    margin-top: 25%;
+    padding-right: 1rem;
   }
-  h2 {
-    padding-right: 25%;
+  .page5 {
+    height: 100rem;
   }
   .formx {
     display: flex;
@@ -665,16 +793,28 @@ input:focus + label {
     flex-direction: column;
     margin: auto;
   }
-  #logo {
-    width: fit-content;
-    height: fit-content;
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    height: 62.5rem;
   }
-  .footer-text {
-    margin-left: 50%;
+  .right-text {
+    margin-top: 5rem;
+  }
+  .picture-right {
+    height: 80%;
+  }
+  .header a,
+  .header p {
+    padding-left: 3.063rem;
+  }
+  .header a.logo,
+  .header p.logo {
+    padding-left: 4rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   #wrapper,
   #footer {
     margin: 0 auto;
@@ -748,7 +888,7 @@ input:focus + label {
   }
   input,
   .six-page-button {
-    width: 350px;
+    width: 100%;
   }
   #logo {
     width: fit-content;
@@ -759,7 +899,7 @@ input:focus + label {
     font-size: 0.5rem;
   }
   .t-two {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .five-page-button {
     font-size: 0.7rem;
@@ -829,7 +969,7 @@ input:focus + label {
     flex-direction: column;
   }
   .t-two {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   #logo {
     width: 20%;
@@ -853,7 +993,8 @@ input:focus + label {
   }
   input,
   .six-page-button {
-    width: 250px;
+    width: 100%;
+    /* width: 250px; */
   }
   .formx {
     padding-left: 10%;
