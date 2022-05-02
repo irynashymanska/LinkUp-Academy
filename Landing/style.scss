@@ -564,7 +564,7 @@ input:focus + label {
   transform: translateX(0px);
 }
 .moving-left:hover {
-  transform: translateX(80px);
+  transform: translateX(60px);
 }
 
 @mixin footer {
@@ -777,17 +777,15 @@ input:focus + label {
 }
 
 @media (max-width: 850px) {
-  #wrapper,
-  #footer {
-    margin: 0 auto;
-  }
+  @include footer();
   .top-text {
-    font-size: 6.8rem;
+    font-size: 4rem;
     text-align: center;
   }
-  .second-text-bottom {
+  .second-text-centre {
     font-size: 1.5rem;
   }
+
   .first-text-bottom {
     font-size: 1rem;
   }
@@ -799,50 +797,17 @@ input:focus + label {
     text-align: center;
     margin: auto;
   }
-  .page3 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
+  .t-two {
+    font-size: 2.5rem;
+  }
+  .t-three {
+    font-size: 1.32rem;
+  }
+  .five-page-button {
+    font-size: 0.7rem;
   }
 
-  .picture {
-    max-width: 80%;
-    padding-bottom: 10%;
-    width: fit-content;
-  }
-
-  .page3 {
-    height: 60rem;
-  }
-
-  .img-page4 {
-    justify-content: center;
-  }
-  .picture-right {
-    max-height: 60%;
-    justify-self: center;
-    padding-top: 0.125rem;
-  }
-  .page4 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .three-four,
-  .page6 {
-    @include centre();
-    flex-direction: column;
-  }
-
-  .page6 {
-    align-items: center;
-    justify-content: center;
-    height: 115%;
-  }
-
-  .left-text,
-  .page5-text,
   form {
     padding-bottom: 3rem;
     padding-top: 3rem;
@@ -853,44 +818,144 @@ input:focus + label {
   }
   input,
   .six-page-button {
-    width: 100%;
+    width: 110%;
   }
 
-  #logo {
-    width: fit-content;
-    height: fit-content;
+  .picture {
+    max-width: 80%;
   }
-  .footer-text {
-    margin-left: 25%;
-    font-size: 0.5rem;
+  .page2 {
+    height: 800px;
   }
-  .t-two {
-    font-size: 2.5rem;
+
+  .makeup,
+  .second-text-centre {
+    padding-top: 10rem;
   }
-  .five-page-button {
-    font-size: 0.7rem;
+
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    padding-top: 20rem;
+  }
+
+  .right-text {
+    padding-left: 6rem;
+  }
+  .page4 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img-page4 {
+    justify-content: center;
+  }
+  .picture-right {
+    max-height: 80%;
+    justify-self: center;
+  }
+
+  .three-four {
+    @include centre();
+    flex-direction: column;
+  }
+
+  .left-text {
+    padding-bottom: 3rem;
+  }
+  .page5 {
+    padding-top: 5rem;
+    height: 120%;
+  }
+  .page5-text {
+    padding-bottom: 4rem;
+  }
+
+  .page6 {
+    align-items: center;
+    justify-content: center;
+    height: 115%;
+  }
+  .last-img {
+    max-width: 50%;
+    padding-top: 12%;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-right {
+    margin-top: 0 auto;
+    margin-left: 3rem;
+  }
+
+  .header a,
+  .header p {
+    padding-top: 5%;
+    font-size: 1.25rem;
+  }
+
+  .header-right {
+    padding-top: 5%;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-right: 3rem;
+  }
+
+  .header .logo {
+    padding-right: 0.5rem;
+    max-width: 80%;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 385px) {
   #wrapper,
   #footer {
     margin: 0 auto;
   }
-  .picture-page5 {
-    width: 50%;
+
+  .header a,
+  .header p {
+    padding-top: 10%;
+    font-size: 1rem;
   }
+
+  .header-right {
+    padding-top: 5%;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-right: 3rem;
+  }
+
   #c-1,
   #c-2,
   #c-3 {
     @include centre();
     flex-direction: column;
     margin: auto;
-    width: 9rem;
-    height: 9rem;
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .page2 {
+    height: 35.5rem;
+  }
+
+  .makeup,
+  .second-text-centre {
+    padding-top: 6rem;
   }
   .top-text {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     text-align: center;
   }
 
@@ -907,25 +972,34 @@ input:focus + label {
   .second-text-centre {
     font-size: 1.5rem;
   }
-  .picture-right {
-    max-height: 40%;
-    padding-top: 25rem;
-    padding-left: 7rem;
+  .second-text-bottom {
+    font-size: 0.5rem;
+  }
+  .t-one,
+  .t-two {
+    font-size: 1.8rem;
+  }
+  .t-three {
+    font-size: 1.2rem;
   }
 
-  .page5-soon,
-  .first-page5-b {
-    padding-top: 2rem;
+  .picture-right {
+    max-height: 60%;
+    justify-self: center;
+  }
+  .img-page4 {
+    justify-content: center;
   }
 
   .page3 {
     display: flex;
     flex-direction: column;
-    height: 95%;
+    padding-top: 10rem;
+    height: 45rem;
   }
 
-  .right-text {
-    padding-bottom: 30%;
+  .page4 {
+    padding-top: 0.6rem;
   }
 
   .five-page-button {
@@ -938,38 +1012,26 @@ input:focus + label {
     margin-left: 10%;
     flex-direction: column;
   }
-  .t-two {
-    font-size: 1.875rem;
-  }
 
-  #logo {
-    width: 20%;
-    height: 20%;
-    padding-left: 0, auto;
+  .page5-text,
+  .left-text,
+  .right-text {
+    margin: auto;
+    padding-left: 2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 5rem;
   }
-  .footer-text {
-    margin-left: 20%;
+  .logo {
+    padding-left: 0.4rem;
   }
-
   .icon-right {
     margin-top: 0, auto;
     margin-right: 10%;
   }
 
-  .header a,
-  .header p {
-    padding-top: 10%;
-    font-size: 0.8rem;
-  }
-
-  .footer-text {
-    font-size: 0.5rem;
-  }
-
   input,
   .six-page-button {
     width: 100%;
-    /* width: 250px; */
   }
 
   .formx {
@@ -978,11 +1040,24 @@ input:focus + label {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .last-img {
-    max-width: 40%;
-    padding-left: 30%;
+    max-width: 50%;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include footer();
+  .footer-text {
+    font-size: 0.5rem;
+  }
+  #logo {
+    max-width: 20%;
+    height: 20%;
+    padding-left: 0, auto;
   }
 }
