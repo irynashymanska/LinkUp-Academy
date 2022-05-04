@@ -22,7 +22,7 @@ $form-text: #8e8e8e;
 }
 
 @function toRem($value) {
-  $remValue: ($value / 16) + rem; 
+  $remValue: ($value / 16) + rem;
   @return $remValue;
 }
 
@@ -68,6 +68,8 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: toRem(775);
+  padding: 0 2rem;
 }
 
 .first-page-button {
@@ -125,9 +127,10 @@ html {
 .header {
   overflow: hidden;
   padding-top: 5rem;
+  min-height: toRem(115);
 }
 .img-logo {
-  width: 9.438rem;
+  max-width: 9.438rem;
   height: 3.188rem;
 }
 .header a,
@@ -404,6 +407,7 @@ img.del {
   vertical-align: middle;
 }
 img.del {
+  padding-bottom: 0;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -441,7 +445,7 @@ form {
 input {
   max-width: 35.031rem;
   width: 100%;
-  
+
   background: none;
   opacity: ($white, 0.7);
   border: none;
@@ -573,9 +577,13 @@ input:focus + label {
   transform: translateX(0px);
 }
 .moving-left:hover {
-  transform: translateX(60px);
+  transform: translateX(toRem(45));
 }
 
+.container-p2,
+.middle {
+  min-height: toRem(400);
+}
 @mixin footer {
   .footer-text {
     margin-left: auto;
@@ -649,14 +657,10 @@ input:focus + label {
     font-size: 14rem;
     text-align: center;
   }
-
-  
-
   .form-inline {
     flex-direction: column;
     align-items: stretch;
   }
-
   .makeup {
     width: 100%;
   }
@@ -691,7 +695,7 @@ input:focus + label {
   }
 }
 
-@media (max-width: 1399px) and (min-width: 1130px) {
+@media (max-width: 1400px) and (min-width: 1130px) {
   .top-text {
     font-size: 12.3rem;
     text-align: center;
@@ -716,9 +720,28 @@ input:focus + label {
   .page5 {
     height: 87.5rem;
   }
+  .formx {
+    @include centre();
+    flex-direction: column;
+    margin: auto;
+  }
+
   .last-img {
-    max-width: 40%;
+    max-width: 50%;
+    margin-top: 16%;
+    height: fit-content;
     padding-right: 3rem;
+  }
+
+  form {
+    max-width: 95%;
+  }
+  .six-page-button {
+    max-width: 100%;
+  }
+  .icon-right {
+    margin-top: 0 auto;
+    margin-left: 11rem;
   }
 }
 
@@ -779,18 +802,26 @@ input:focus + label {
     height: 80%;
   }
 
-  .header a,
-  .header p {
-    padding-left: 3.063rem;
+  .header a {
     &.logo {
-      padding-left: 4rem;
+      padding-left: 3rem;
     }
+  }
+  .header-right {
+    padding: 0;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3rem;
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 850px) {
   @include footer();
-  .page1{
+  .page1 {
     height: 65rem;
   }
   .form-inline {
@@ -839,7 +870,7 @@ input:focus + label {
   .formx {
     @include centre;
   }
- 
+
   .picture {
     max-width: 80%;
   }
@@ -873,7 +904,7 @@ input:focus + label {
     max-height: 80%;
     justify-self: center;
   }
-  .left-text{
+  .left-text {
     padding-right: 4rem;
   }
 
@@ -911,78 +942,58 @@ input:focus + label {
     margin-top: 0 auto;
     margin-left: 0.5rem;
   }
-  .header a,
-  .header p {
-    padding-top: 5%;
-    font-size: 1.25rem;
+
+  .header {
+    padding-right: 1rem;
+    padding-left: 2rem;
   }
 
   .header-right {
-    padding-top: 5%;
-    padding-left: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-left: 0;
-    padding-right: 3rem;
+    padding: 0;
   }
 
-  .header .logo {
-    padding-right: 0.5rem;
-    max-width: 80%;
+  .container-p2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 451px) {
   #wrapper,
   #footer {
     margin: 0 auto;
   }
-  .page1{
+  .page1 {
     height: 65rem;
   }
   .header a,
   .header p {
-    padding-top: 10%;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: 0;
+    padding-bottom: 0.4rem;
+    
   }
-
-  .header-right {
-    padding-top: 5%;
-    padding-left: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-left: 0;
-    padding-right: 3rem;
-  }
-
-  #c-1,
-  #c-2,
-  #c-3 {
-    @include centre();
-    flex-direction: column;
-    margin: auto;
-    width: 16rem;
-    height: 16rem;
+ 
+  #app1,
+  #gp1 {
+    width: 17px;
+    height: 17px;
+    padding: 0;
   }
 
   .page2 {
-    height: 45rem;
+    min-height: 43rem;
   }
 
   .makeup,
   .second-text-centre {
-    padding-top: 6rem;
+    padding-top: 9rem;
   }
   .top-text {
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 3rem;
   }
 
-  .first-text-bottom {
+  .first-text-bottom,.second-text-bottom,.five-page-button {
     font-size: 0.7rem;
   }
 
@@ -995,11 +1006,6 @@ input:focus + label {
   .second-text-centre {
     font-size: 1.5rem;
   }
-  .second-text-bottom {
-    font-size: 0.7rem;
-    margin-right: 2rem ;
-    margin-left: 2rem ;
-  }
   .t-one,
   .t-two {
     font-size: 1.8rem;
@@ -1007,31 +1013,16 @@ input:focus + label {
   .t-three {
     font-size: 1.2rem;
   }
-
-  .picture-right {
-    max-height: 60%;
-    justify-self: center;
-  }
-  .img-page4 {
-    justify-content: center;
-  }
-
   .page3 {
     display: flex;
     flex-direction: column;
-    padding-top: 7rem;
-    height: 50rem;
+    padding-top: 9rem;
+    min-height: 50rem;
   }
-
-  .page4 {
-    padding-top: 0.6rem;
-  }
-
   .five-page-button {
     width: 80%;
     margin-top: 10%;
     margin-left: 0;
-    font-size: 0.7rem;
   }
   .page5-b {
     margin-left: 10%;
@@ -1043,21 +1034,12 @@ input:focus + label {
   .right-text {
     margin: auto;
     padding-left: 2rem;
-    padding-top: 0.3rem;
     padding-bottom: 5rem;
-  }
-  .left-text{
-    padding-right: 4rem;
   }
 
   .right-text {
     padding-bottom: 15rem;
   }
-  .logo {
-    padding-left: 0.4rem;
-  }
- 
-
   .icon-right {
     margin-top: 0 auto;
     margin-left: 0.5rem;
@@ -1069,7 +1051,7 @@ input:focus + label {
     max-width: 80%;
   }
 
-  input{
+  input {
     margin-bottom: 1.8em;
   }
   .six-page-button {
@@ -1101,5 +1083,27 @@ input:focus + label {
     max-width: 20%;
     height: 20%;
     padding-left: 0, auto;
+  }
+
+  .container-p2,
+  .middle {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .img-logo {
+    width: 5.5rem;
+  }
+
+  .header a.logo {
+    padding-left: 2rem;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 auto;
+    padding-left: 1rem;
   }
 }
