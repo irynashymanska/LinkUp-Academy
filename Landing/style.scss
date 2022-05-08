@@ -484,6 +484,7 @@ h2 {
   float: left;
   padding-right: 11.875rem;
   height: 67.5rem;
+  width: toRem(970);
 }
 
 .six-page-button {
@@ -520,11 +521,6 @@ input:focus + label {
   color: $white;
   @include centre();
   overflow-x: hidden;
-}
-
-.form-inline {
-  flex-flow: row wrap;
-  align-items: center;
 }
 
 .footer-text {
@@ -638,10 +634,6 @@ input:focus + label {
     font-size: 3rem;
   }
 
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
   form {
     padding-left: 0;
   }
@@ -657,10 +649,7 @@ input:focus + label {
     font-size: 14rem;
     text-align: center;
   }
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
+
   .makeup {
     width: 100%;
   }
@@ -684,7 +673,7 @@ input:focus + label {
   @include footer;
 
   .right-text {
-    padding-left: 2rem;
+    padding-left: 4rem;
   }
 
   .left-text {
@@ -696,8 +685,9 @@ input:focus + label {
 }
 
 @media (max-width: 1400px) and (min-width: 1130px) {
+  @include helper();
   .top-text {
-    font-size: 12.3rem;
+    font-size: 11rem;
     text-align: center;
   }
   .parent {
@@ -705,17 +695,20 @@ input:focus + label {
   }
   #c-1,
   #c-2,
-  #c-3,
-  .picture-page5 {
-    width: 25rem;
-    height: 25rem;
-    margin: auto;
+  #c-3 {
+    margin: 0;
+    padding: 0;
+    width: 22rem;
+    height: 22rem;
+    margin: toRem(10);
   }
+
   .picture-page5 {
+    width: 22rem;
+    height: 22rem;
     height: fit-content;
     margin: auto;
   }
-  @include helper();
 
   .page5 {
     height: 87.5rem;
@@ -747,20 +740,16 @@ input:focus + label {
 
 @media (max-width: 1130px) {
   .top-text {
-    font-size: 9.6rem;
+    font-size: 8rem;
     text-align: center;
   }
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
+
   #c-1,
   #c-2,
   #c-3,
   .picture-page5 {
     @include centre();
     flex-direction: column;
-
     margin: auto;
     width: toRem(270.5);
     height: toRem(270.5);
@@ -822,14 +811,13 @@ input:focus + label {
 @media (max-width: 850px) {
   @include footer();
   .page1 {
-    height: 65rem;
+    height: 55rem;
   }
-  .form-inline {
-    flex-flow: row wrap;
-    align-items: center;
+  .middle {
+    padding-top: 15rem;
   }
   .top-text {
-    font-size: 4rem;
+    font-size: 4.7rem;
     text-align: center;
   }
   .second-text-centre {
@@ -840,14 +828,13 @@ input:focus + label {
     font-size: 1rem;
   }
   .second-text-bottom {
-    font-size: 0.75rem;
+    font-size: 0.87rem;
   }
   .first-text-centre {
     font-size: 9rem;
     text-align: center;
     margin: auto;
   }
-
   .t-two {
     font-size: 2.5rem;
   }
@@ -929,8 +916,11 @@ input:focus + label {
     justify-content: center;
     height: 115%;
   }
+
   .last-img {
     max-width: 100%;
+    height: toRem(500);
+    object-fit: cover;
     padding: 0;
     float: none;
     display: block;
@@ -942,14 +932,21 @@ input:focus + label {
     margin-top: 0 auto;
     margin-left: 0.5rem;
   }
-
   .header {
-    padding-right: 1rem;
-    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+  .header a,
+  .header p {
+    margin-bottom: toRem(5);
+  }
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
-  .header-right {
-    padding: 0;
+  .header .logo {
+    padding-left: 4rem;
   }
 
   .container-p2 {
@@ -958,42 +955,29 @@ input:focus + label {
   }
 }
 
-@media (max-width: 451px) {
-  #wrapper,
-  #footer {
-    margin: 0 auto;
-  }
-  .page1 {
-    height: 65rem;
-  }
+@media (max-width: 460px) {
   .header a,
   .header p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0;
-    padding-bottom: 0.4rem;
-    
   }
- 
+
   #app1,
   #gp1 {
     width: 17px;
     height: 17px;
     padding: 0;
   }
-
-  .page2 {
-    min-height: 43rem;
-  }
-
   .makeup,
   .second-text-centre {
-    padding-top: 9rem;
+    padding-top: 7rem;
   }
   .top-text {
     font-size: 3rem;
   }
 
-  .first-text-bottom,.second-text-bottom,.five-page-button {
+  .first-text-bottom,
+  .five-page-button {
     font-size: 0.7rem;
   }
 
@@ -1003,9 +987,7 @@ input:focus + label {
   .first-page-button {
     max-width: 60%;
   }
-  .second-text-centre {
-    font-size: 1.5rem;
-  }
+
   .t-one,
   .t-two {
     font-size: 1.8rem;
@@ -1014,8 +996,6 @@ input:focus + label {
     font-size: 1.2rem;
   }
   .page3 {
-    display: flex;
-    flex-direction: column;
     padding-top: 9rem;
     min-height: 50rem;
   }
@@ -1046,36 +1026,14 @@ input:focus + label {
   }
 
   form {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
     max-width: 80%;
   }
-
   input {
     margin-bottom: 1.8em;
   }
-  .six-page-button {
-    max-width: 100%;
-  }
-
-  .formx {
-    @include centre;
-  }
-
   h2 {
     font-size: 2.25rem;
   }
-
-  .last-img {
-    max-width: 100%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  }
-
-  @include footer();
   .footer-text {
     font-size: 0.65rem;
   }
@@ -1084,7 +1042,6 @@ input:focus + label {
     height: 20%;
     padding-left: 0, auto;
   }
-
   .container-p2,
   .middle {
     padding-left: 1.5rem;
@@ -1094,16 +1051,10 @@ input:focus + label {
   .img-logo {
     width: 5.5rem;
   }
-
   .header a.logo {
     padding-left: 2rem;
   }
-
-  .header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 auto;
-    padding-left: 1rem;
+  .header {
+    padding-right: 2rem;
   }
 }

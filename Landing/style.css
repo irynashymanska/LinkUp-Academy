@@ -483,6 +483,7 @@ h2 {
   float: left;
   padding-right: 11.875rem;
   height: 67.5rem;
+  width: 60.625rem;
 }
 
 .six-page-button {
@@ -521,11 +522,6 @@ input:focus + label {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-}
-
-.form-inline {
-  flex-flow: row wrap;
-  align-items: center;
 }
 
 .footer-text {
@@ -608,10 +604,6 @@ input:focus + label {
   .t-two {
     font-size: 3rem;
   }
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
   form {
     padding-left: 0;
   }
@@ -631,10 +623,6 @@ input:focus + label {
   .top-text {
     font-size: 14rem;
     text-align: center;
-  }
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
   }
   .makeup {
     width: 100%;
@@ -666,7 +654,7 @@ input:focus + label {
     margin-left: 3rem;
   }
   .right-text {
-    padding-left: 2rem;
+    padding-left: 4rem;
   }
   .left-text {
     padding-right: 2rem;
@@ -677,27 +665,6 @@ input:focus + label {
 }
 
 @media (max-width: 1400px) and (min-width: 1130px) {
-  .top-text {
-    font-size: 12.3rem;
-    text-align: center;
-  }
-  .parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #c-1,
-  #c-2,
-  #c-3,
-  .picture-page5 {
-    width: 25rem;
-    height: 25rem;
-    margin: auto;
-  }
-  .picture-page5 {
-    height: fit-content;
-    margin: auto;
-  }
   .second-text-bottom {
     font-size: 1.125rem;
   }
@@ -725,6 +692,30 @@ input:focus + label {
   }
   form {
     padding-left: 0;
+  }
+  .top-text {
+    font-size: 11rem;
+    text-align: center;
+  }
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #c-1,
+  #c-2,
+  #c-3 {
+    margin: 0;
+    padding: 0;
+    width: 22rem;
+    height: 22rem;
+    margin: 0.625rem;
+  }
+  .picture-page5 {
+    width: 22rem;
+    height: 22rem;
+    height: fit-content;
+    margin: auto;
   }
   .page5 {
     height: 87.5rem;
@@ -756,12 +747,8 @@ input:focus + label {
 
 @media (max-width: 1130px) {
   .top-text {
-    font-size: 9.6rem;
+    font-size: 8rem;
     text-align: center;
-  }
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
   }
   #c-1,
   #c-2,
@@ -860,14 +847,13 @@ input:focus + label {
     margin-left: 3rem;
   }
   .page1 {
-    height: 65rem;
+    height: 55rem;
   }
-  .form-inline {
-    flex-flow: row wrap;
-    align-items: center;
+  .middle {
+    padding-top: 15rem;
   }
   .top-text {
-    font-size: 4rem;
+    font-size: 4.7rem;
     text-align: center;
   }
   .second-text-centre {
@@ -877,7 +863,7 @@ input:focus + label {
     font-size: 1rem;
   }
   .second-text-bottom {
-    font-size: 0.75rem;
+    font-size: 0.87rem;
   }
   .first-text-centre {
     font-size: 9rem;
@@ -962,6 +948,8 @@ input:focus + label {
   }
   .last-img {
     max-width: 100%;
+    height: 31.25rem;
+    object-fit: cover;
     padding: 0;
     float: none;
     display: block;
@@ -973,11 +961,19 @@ input:focus + label {
     margin-left: 0.5rem;
   }
   .header {
-    padding-right: 1rem;
-    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+  .header a,
+  .header p {
+    margin-bottom: 0.3125rem;
   }
   .header-right {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header .logo {
+    padding-left: 4rem;
   }
   .container-p2 {
     padding-left: 2rem;
@@ -985,19 +981,11 @@ input:focus + label {
   }
 }
 
-@media (max-width: 451px) {
-  #wrapper,
-  #footer {
-    margin: 0 auto;
-  }
-  .page1 {
-    height: 65rem;
-  }
+@media (max-width: 460px) {
   .header a,
   .header p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0;
-    padding-bottom: 0.4rem;
   }
   #app1,
   #gp1 {
@@ -1005,17 +993,15 @@ input:focus + label {
     height: 17px;
     padding: 0;
   }
-  .page2 {
-    min-height: 43rem;
-  }
   .makeup,
   .second-text-centre {
-    padding-top: 9rem;
+    padding-top: 7rem;
   }
   .top-text {
     font-size: 3rem;
   }
-  .first-text-bottom, .second-text-bottom, .five-page-button {
+  .first-text-bottom,
+  .five-page-button {
     font-size: 0.7rem;
   }
   .first-text-centre {
@@ -1023,9 +1009,6 @@ input:focus + label {
   }
   .first-page-button {
     max-width: 60%;
-  }
-  .second-text-centre {
-    font-size: 1.5rem;
   }
   .t-one,
   .t-two {
@@ -1035,8 +1018,6 @@ input:focus + label {
     font-size: 1.2rem;
   }
   .page3 {
-    display: flex;
-    flex-direction: column;
     padding-top: 9rem;
     min-height: 50rem;
   }
@@ -1064,38 +1045,13 @@ input:focus + label {
     margin-left: 0.5rem;
   }
   form {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
     max-width: 80%;
   }
   input {
     margin-bottom: 1.8em;
   }
-  .six-page-button {
-    max-width: 100%;
-  }
-  .formx {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   h2 {
     font-size: 2.25rem;
-  }
-  .last-img {
-    max-width: 100%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  }
-  .footer-text {
-    margin-left: auto;
-    margin-right: 3rem;
-  }
-  .footer-logo {
-    margin-left: 3rem;
   }
   .footer-text {
     font-size: 0.65rem;
@@ -1116,12 +1072,8 @@ input:focus + label {
   .header a.logo {
     padding-left: 2rem;
   }
-  .header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 auto;
-    padding-left: 1rem;
+  .header {
+    padding-right: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
