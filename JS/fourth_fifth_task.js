@@ -1,7 +1,7 @@
 function minMax(array) {
   let arr = [];
   let min=array[0];
-  let max=array[0];   // variable to hold the current max/min value.
+  let max=array[0];
 
   for (var i = 0; i < array.length; i++) {
    

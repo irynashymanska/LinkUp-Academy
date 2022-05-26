@@ -1,17 +1,15 @@
 function jazzify(s){
-    let new_S = [];
+    let new_arr = [];
     for(let i = 0; i<s.length; i++){
         if(!s[i].endsWith("7")){
-            new_S.push(s[i]+"7");  
+            new_arr.push(s[i]+"7");  
         }
         else {
-            new_S.push(s[i]);  
-        }
-               
-       
+            new_arr.push(s[i]);  
+        }       
     }
 
-    return new_S;
+    return new_arr;
   }
 
 function orderDesc(str){
