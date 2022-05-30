@@ -1,8 +1,8 @@
 const keysAndValues = (obj) => {
-    let a = Object.keys(obj);
-    let b = Object.values(obj);
-    let c = [a, b];
-    return c;
+    let keys = Object.keys(obj);
+    let values = Object.values(obj);
+    let commonArray = [keys, values];
+    return commonArray;
   };
   console.log("\n 8. Return the Objects Keys and Values: ");
   console.log(keysAndValues({ a: 1, b: 2, c: 3 }));

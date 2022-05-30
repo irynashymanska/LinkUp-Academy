@@ -1,7 +1,7 @@
 const re = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/;
 
-function mathExpr(s) {
-  console.log("(%s)  %s", s, re.test(s));
+function mathExpr(str) {
+  console.log("(%s)  %s", str, re.test(str));
 }
 
 

@@ -1,11 +1,11 @@
-function jazzify(s){
+function jazzify(arr){
     let new_arr = [];
-    for(let i = 0; i<s.length; i++){
-        if(!s[i].endsWith("7")){
-            new_arr.push(s[i]+"7");  
+    for(let i = 0; i<arr.length; i++){
+        if(!arr[i].endsWith("7")){
+            new_arr.push(arr[i]+"7");  
         }
         else {
-            new_arr.push(s[i]);  
+            new_arr.push(arr[i]);  
         }       
     }
 

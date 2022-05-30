@@ -1,8 +1,8 @@
-function hasHiddenFee(arr, s){
-    let checker;
+function hasHiddenFee(arr, str){
+    let isBigger;
     let sum = 0;
     let new_arr = arr.map(s => s.slice(1));
-    let n = s.substring(1);
+    let total = str.substring(1);
  
     
     for(let i = 0; i < arr.length; i++)
@@ -10,14 +10,14 @@ function hasHiddenFee(arr, s){
         sum += Number(new_arr[i]);
     }
 
-       if (sum <n){
-           checker = true;
+       if (sum < total){
+        isBigger = true;
        }
        else {
-           checker = false;
+        isBigger = false;
        }
-    console.log("%s, %s", arr, s);
-    return checker;
+    console.log("%s, %s", arr, str);
+    return isBigger;
 }
 
 console.log("\n 11. No Hidden Fees: ");
