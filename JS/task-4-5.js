@@ -18,14 +18,11 @@ function minMax(array) {
   return arr;
 }
 
-console.log("4. Sort an Array by String Length:");
-const array = ["Google", "Apple", "Microsoft"];
-
-const sorted_array = array.sort((a,b) => a.length - b.length);
-
-console.log(sorted_array); 
+function sortByLength (array){
+  sorted_array = array.sort((a,b) => a.length - b.length);
+ return sorted_array
+}
 
 
 
-console.log("\n 5. Find the Smallest and Biggest Numbers: ");
-console.log( minMax([1, -2, 3, 1600, 5]));
+

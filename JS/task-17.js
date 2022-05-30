@@ -15,9 +15,4 @@ function skippedLetter(str) {
      
 }
 
-console.log("\n 17. What's the Missing Letter? ");
-console.log(skippedLetter('abdefg'));
-console.log(skippedLetter('mnopqs'));
-console.log(skippedLetter('tuvxyz'));
-console.log(skippedLetter('ghijklmno'));
 

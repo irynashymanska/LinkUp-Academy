@@ -16,11 +16,5 @@ function hasHiddenFee(arr, str){
        else {
         isBigger = false;
        }
-    console.log("%s, %s", arr, str);
     return isBigger;
 }
-
-console.log("\n 11. No Hidden Fees: ");
-console.log(hasHiddenFee(["$2", "$4", "$1", "$8"], "$15") );
-console.log(hasHiddenFee(["$1", "$2", "$3"], "$6"));
-console.log(hasHiddenFee(["$1"], "$4"));

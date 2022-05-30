@@ -5,8 +5,6 @@ function sortIt(arr) {
       return num1 - num2;
     });
   }
-  console.log("\n 10. Sort the Unsortable: ");
-  console.log(sortIt([[3], 4, [2], [5], 1, 6]));
-
+ 
 
  
