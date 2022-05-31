@@ -1,4 +1,4 @@
-function removeSpecialCharacters (str){
-    res = str.replace(/[^\w ]/g, '');
-    return res;
+function removeSpecialCharacters(str) {
+  let res  = str.replace(/[&\/\\#,+!@()$~%.'":*?<^>{}]/g, '');
+  return res;
 }

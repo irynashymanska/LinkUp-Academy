@@ -1,15 +1,15 @@
-function ascDesNone(array, str){
-    switch(str){
+function ascDesNone(array, str) {
+    let new_array = array;
+    switch (str) {
         case "Asc":
-        array.sort(function(a, b){return a-b});
-        break;
+            new_array.sort(function (a, b) { return a - b });
+            break;
         case "Des":
-        array.sort(function(a, b){return b-a});
-        break;
+            new_array.sort(function (a, b) { return b - a });
+            break;
         case "None":
-        break;
+            break;
     }
 
-    return array;
-  }
-
+    return new_array;
+}

@@ -1,6 +1,3 @@
 function findLargestNums(mainArray) {
-    return mainArray.map(function(subArray) {
-      return Math.max.apply(null, subArray);
-    });
+  return mainArray.map(subArray => Math.max.apply(null, subArray));
   }
-

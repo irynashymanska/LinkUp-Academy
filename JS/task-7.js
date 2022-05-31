@@ -1,7 +1,7 @@
-class  Calculator {
+class Calculator {
     constructor(a, b) {
-      this.a = a;
-      this.b = b;
+        this.a = a;
+        this.b = b;
     }
 
     add(a, b) {
@@ -19,9 +19,9 @@ class  Calculator {
         return a / b;
     }
 
-  }
+}
 
-  var calculator = new Calculator()
+let calculator = new Calculator()
 
 
 

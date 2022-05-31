@@ -1,10 +1,3 @@
-function trace(mat)
-{
-    let length = mat.length;
-    let sum = 0;
-    for(let i = 0; i < length; i++)
-        sum += mat[i][i];
-         
-    return sum;
+function trace(array) {
+  return array.reduce((sum, row, index) => sum + row[index], 0);
 }
-

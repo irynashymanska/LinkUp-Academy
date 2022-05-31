@@ -1,10 +1,7 @@
-function tempConversion(c){
-    let array = [];
-    let f = c*9/5 +32;
-    let k = c + 273.15;
+function tempConversion(c) {
+  let f = (c * 9) / 5 + 32;
+  let k = c + 273.15;
 
-    array.push(f);
-    array.push(k);
-
-    return array;
+  return [Number(f.toFixed(2)), Number(k.toFixed(2))];
 }
+
