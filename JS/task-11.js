@@ -5,7 +5,5 @@ function hasHiddenFee(arr, str) {
     (previousValue, currentValue) =>
       Number(previousValue) + Number(currentValue)
   );
-  console.log(sum);
-  console.log(str.substring(1));
   return sum < Number(str.substring(1));
 }
