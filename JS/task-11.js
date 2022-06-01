@@ -1,10 +1,11 @@
 function hasHiddenFee(arr, str) {
-  let new_arr = arr.map((s) => s.slice(1));
+  const newArr = arr.map((s) => s.slice(1));
   let sum = 0;
-  sum = new_arr.reduce(
+  sum = newArr.reduce(
     (previousValue, currentValue) =>
       Number(previousValue) + Number(currentValue)
   );
-
-  return sum < str.substring(1);
+  console.log(sum);
+  console.log(str.substring(1));
+  return sum < Number(str.substring(1));
 }

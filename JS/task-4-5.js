@@ -1,5 +1,4 @@
 function minMax(array) {
-
   let min = array[0];
   let max = array[0];
 
@@ -12,9 +11,9 @@ function minMax(array) {
     }
   });
 
-  return [min, max];;
+  return [min, max];
 }
 
 function sortByLength(array) {
-  return array.sort((a, b) => a.length - b.length);
+  return [...array].sort((a, b) => a.length - b.length);
 }

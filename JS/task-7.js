@@ -21,7 +21,7 @@ class Calculator {
 
 }
 
-let calculator = new Calculator()
+const calculator = new Calculator()
 
 
 

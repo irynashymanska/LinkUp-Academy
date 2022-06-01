@@ -6,5 +6,5 @@ function missingLetter(str) {
     }
   }
 
-  return (result = result === "" ? "No Missing Letter" : result);
+  return result || "No Missing Letter";
 }

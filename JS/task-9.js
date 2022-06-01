@@ -1,15 +1,16 @@
 function ascDesNone(array, str) {
-    let new_array = array;
+    const cloneArray = [...array];
     switch (str) {
         case "Asc":
-            new_array.sort(function (a, b) { return a - b });
+            cloneArray.sort(function (a, b) { return a - b });
             break;
         case "Des":
-            new_array.sort(function (a, b) { return b - a });
+            cloneArray.sort(function (a, b) { return b - a });
             break;
         case "None":
             break;
     }
 
-    return new_array;
+    return cloneArray;
 }
+
