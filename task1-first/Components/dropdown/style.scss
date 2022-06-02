@@ -1,0 +1,82 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+$main: #0052ff;
+$list-text: #00194c;
+$font-family_1: "Inter";
+$background-color_1: #e5e5e5;
+$white: #ffffff;
+$background-color_3: #e6eeff;
+
+
+body {
+  background-color: $background-color_1;
+  font-family: $font-family_1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.out {
+  height: 54px;
+  width: 325px;
+  background-color: $white;
+  margin: 5px;
+  margin-left: 200px;
+  border: 1px solid $main;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: $main;
+}
+.in {
+  margin-left: 24px;
+  padding: 13px;
+  height: 28px;
+  width: 285px;
+  cursor: pointer;
+}
+img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 205px;
+}
+.list {
+  height: 54px;
+  width: 325px;
+  display: flex;
+  align-items: center;
+  color: $list-text;
+  background: $white;
+  border-bottom: 1px solid $background-color_1;
+  margin-left: 200px;
+  cursor: pointer;
+  &:hover {
+    background-color: $background-color_3;
+  }
+}
+p {
+  margin-left: 24px;
+  padding: 16px;
+}
+.shadow1 {
+  border-radius: 4px 4px 0px 0px;
+}
+.shadow2 {
+  border-radius: 0px;
+}
+.shadow3 {
+  border-radius: 0px 0px 4px 4px;
+}
+span {
+  align-self: centre;
+}

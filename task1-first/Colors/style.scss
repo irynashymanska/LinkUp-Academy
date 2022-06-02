@@ -1,0 +1,87 @@
+$white: #ffffff;
+$red_orange: #ff3434;
+$sunshade: #fe9526;
+$sunglow: #ffcb2f;
+$emerald: #53d86a;
+$blue_ribbon: #0052ff;
+
+body {
+  background-color: $white;
+}
+.square {
+  height: 48px;
+  width: 48px;
+  margin: 5px;
+  margin-left: 200px;
+  border-radius: 3px;
+}
+.square1 {
+  height: 130px;
+  width: 130px;
+  margin: 10px;
+  border-radius: 3px;
+}
+#red {
+  background-color: $red_orange;
+  margin-left: 200px;
+}
+#orange {
+  background-color: $sunshade;
+}
+#yellow {
+  background-color: $sunglow;
+  margin-left: 200px;
+}
+#green {
+  background-color: $emerald;
+  margin-left: 200px;
+}
+#blue {
+  background-color: $blue_ribbon;
+}
+#a1 {
+  background-color: adjust-color($blue_ribbon, $lightness: 45%);
+}
+#a2 {
+  background-color: adjust-color($blue_ribbon, $lightness: 35%);
+}
+#a3 {
+  background-color: adjust-color($blue_ribbon, $lightness: 25%);
+}
+#a4 {
+  background-color: adjust-color($blue_ribbon, $lightness: 15%);
+}
+#a5 {
+  background-color: $blue_ribbon;
+}
+#a6 {
+  background-color:  darken($blue_ribbon, 5%);
+}
+#a7 {
+  background-color: darken($blue_ribbon, 15%);
+}
+#a8 {
+  background-color: darken($blue_ribbon, 25%);
+}
+#a9 {
+  background-color: darken($blue_ribbon, 35%);
+}
+
+#b1 {
+  background-color: rgba($blue_ribbon, .08);
+}
+#b2 {
+  background-color: rgba($blue_ribbon, .16);
+}
+#b3 {
+  background-color: rgba($blue_ribbon, .24);
+}
+#b4 {
+  background-color: rgba($blue_ribbon, .32);
+}
+#b5 {
+  background-color: rgba($blue_ribbon, .40);
+}
+#b6 {
+  background-color:  rgba($blue_ribbon, .48);
+}

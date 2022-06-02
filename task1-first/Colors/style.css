@@ -1,0 +1,102 @@
+body {
+  background-color: #ffffff;
+}
+
+.square {
+  height: 48px;
+  width: 48px;
+  margin: 5px;
+  margin-left: 200px;
+  border-radius: 3px;
+}
+
+.square1 {
+  height: 130px;
+  width: 130px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+#red {
+  background-color: #ff3434;
+  margin-left: 200px;
+}
+
+#orange {
+  background-color: #fe9526;
+}
+
+#yellow {
+  background-color: #ffcb2f;
+  margin-left: 200px;
+}
+
+#green {
+  background-color: #53d86a;
+  margin-left: 200px;
+}
+
+#blue {
+  background-color: #0052ff;
+}
+
+#a1 {
+  background-color: #e6eeff;
+}
+
+#a2 {
+  background-color: #b3cbff;
+}
+
+#a3 {
+  background-color: #80a9ff;
+}
+
+#a4 {
+  background-color: #4d86ff;
+}
+
+#a5 {
+  background-color: #0052ff;
+}
+
+#a6 {
+  background-color: #004ae6;
+}
+
+#a7 {
+  background-color: #0039b3;
+}
+
+#a8 {
+  background-color: #002980;
+}
+
+#a9 {
+  background-color: #00194d;
+}
+
+#b1 {
+  background-color: rgba(0, 82, 255, 0.08);
+}
+
+#b2 {
+  background-color: rgba(0, 82, 255, 0.16);
+}
+
+#b3 {
+  background-color: rgba(0, 82, 255, 0.24);
+}
+
+#b4 {
+  background-color: rgba(0, 82, 255, 0.32);
+}
+
+#b5 {
+  background-color: rgba(0, 82, 255, 0.4);
+}
+
+#b6 {
+  background-color: rgba(0, 82, 255, 0.48);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,148 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+:root {
+  --background-color: #e5e5e5;
+  --textcolor: #00194c;
+  --white: #ffffff;
+  --background1: #0052ff;
+  --background1-action: #4d86ff;
+  --background-disabled1: #0052ff14;
+  --color-disabled1: #80a9ff;
+  --color-disabled2: #b3cbff;
+  --background2: #e6eeff;
+  --shadow: rgba(1, 21, 52, 0.16);
+  --color-h: 221;
+  --color-s: 100%;
+  --color-l: 50%;
+}
+
+$color_1: var(--textcolor);
+$color_2: var(--white);
+$color_3: var(--color-disabled1);
+$color_4: var(--color-disabled2);
+$color_5: var(--background1);
+$font-family_1: "Inter", sans-serif;
+$background-color_1: var(--background-color);
+
+body {
+  background-color: $background-color_1;
+  color: $color_1;
+}
+table {
+  position: relative;
+  width: 714px;
+  height: 627px;
+  background: var(--white);
+  font-family: $font-family_1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  th {
+    background: var(--background2);
+  }
+  td {
+    border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+    text-align: center;
+  }
+  tr {
+    font-weight: 400;
+  }
+}
+
+button {
+  font-family: $font-family_1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  width: 131px;
+  height: 48px;
+  color: $color_2;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button-img {
+  width: 159px;
+  height: 48px;
+  &:hover {
+    border: none;
+  }
+  &:focus {
+    border: none;
+  }
+}
+.primary {
+  background: var(--background1);
+  &:hover {
+    background: var(--background1-action);
+    box-shadow: 0px 4px 10px var(--shadow);
+  }
+  &:focus {
+    background: var(--background1-action);
+    box-shadow: 0px 4px 10px var(--shadow);
+  }
+  &:disabled {
+    background: var(--background-disabled1);
+    color: $color_3;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+}
+.ghost {
+  &:hover {
+    background: var(--background2);
+    box-shadow: 0px 4px 10px var(--shadow);
+    
+  }
+  &:focus {
+    background: var(--background2);
+    box-shadow: 0px 4px 10px var(--shadow);
+    
+  }
+  &:disabled {
+    background: var(--white);
+    color: $color_4;
+    border: 1px solid var(--color-disabled2);
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid var(--background1);
+  box-sizing: border-box;
+  color: $color_5;
+  background: var(--white);
+}
+img {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+span {
+  vertical-align: middle;
+}
+.position {
+  display: inline-block;
+  margin: 10px;
+}
+.icon {
+  filter: opacity(25%);
+}
+.container-r {
+  margin-left: 10px;
+}
+.container-l {
+  margin-right: 10px;
+}
